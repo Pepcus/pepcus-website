@@ -79,7 +79,7 @@
             <div class="container">
                 <div class="content do-it-content">
                     <P class="font-size-40 padding-50-25 line-height-13">MVP In 2 Weeks And in Budget? <br> We've Got You Covered!</P>
-                    <a class="tertiary-btn text-uppercase white-color xxs-margin-bot-25" href="contact.html">Let's Do It</a>
+                    <a class="tertiary-btn text-uppercase white-color xxs-margin-bot-25 grey-tooltip" href="contact.html" data-toggle="tooltip" data-placement="bottom" title="Let's Do It !">Let's Do It</a>
                 </div>
             </div>
         </div>
@@ -274,5 +274,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
 </body>
 </html>
