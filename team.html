@@ -67,8 +67,9 @@
             <div class="row">
                 <div id="main_team"></div>
                 <div id="primary_team"></div>
+                <div id="secondary_team" class="col-lg-offset-2 col-md-offset-2"></div>
+<!--                <div id="secondary_team"></div>-->
             </div>
-
             <div id="third_team"></div>
 
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
@@ -241,7 +242,7 @@
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
                     '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
-                    '<p class="secondary-color font-weight-300 line-height-16 mar-bot-12 font-size-14 text-left "><span class="font-bold text-left">' +
+                    '<p class="secondary-color font-weight-300 line-height-16 mar-top-15 font-size-14 text-left "><span class="font-bold text-left">' +
                     'Specialities:</span>' + teamData.specialities + '  </p>' +
                     '</p>' +
                     '</div>' +
@@ -270,7 +271,7 @@
                   '\n' +
                   ' \n' +
                   '\n' +
-                  'Leading a large team of testers and automation engineers, he significantly contributes to Pepcus’ USP ‘sell quality. Prior to Pepcus, he helped to make software organizations CMMI certified & thus adds tremendous value in Process Management for Pepcus..',
+                  'Prior to Pepcus, he helped to make software organizations CMMI certified & thus adds tremendous value in Process Management for Pepcus..',
                 specialities: ' Quality & Automation | Process Management'
             }, {
             name: 'Kuldeep Singh Shekhawat',
@@ -280,26 +281,7 @@
             img2: 'images/team/KuldeepF.jpg',
             description: ' Kuldeep has more than 7 years of IT experience in software development life cycle with Java/J2EE application development in complex, fast-paced environments. He works efficiently and successfully both alone and as a part of the team. By his in-depth knowledge of technologies, he really helps our customers in providing awesome business solutions.',
             specialities: ' JAVA/J2EE | SDLC '
-          },{
-
-          name: 'Vinay Jain',
-          imageURL: '',
-          role: 'Administration Head',
-          img1: 'images/team/vinay-1.jpg',
-          img2: 'images/team/vinay-2.jpg',
-          description: ' A remarkable personality - Vinay, is handling administrations and operations of  Pepcus since beginning. His responsibilities include managing Corporate Finance,  Accounting, Payroll, Administration, Risk Management and Investor Relations.',
-          specialities: ' Administration | Finance'
-        },{
-
-          name: 'Purvi Jain',
-          imageURL: '',
-          role: 'HR Operations',
-          img1: 'images/team/purvi1.jpg',
-          img2: 'images/team/purvi-2.jpg',
-          description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She puts an amazing consistency, creativity and the passion in her work. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
-          specialities: ' Social Media Branding |   HR'
-        }
-
+          }
         ];
         var renderPrimaryTeam = function() {
             for (var i = 0; i < primaryteam.length; i++) {
@@ -315,7 +297,7 @@
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
                     '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-left"><span class="font-bold text-left">' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-top-15 text-left"><span class="font-bold text-left">' +
                     'Specialities:</span>' + teamData.specialities + '  </p>' +
                     '</p>' +
                     '</div>' +
@@ -324,10 +306,8 @@
                     '</div>');
                 $("#primary_team").append(teamHTML);
             }
-
         };
          var secondaryTeam = [{
-
                 name: 'Vinay Jain',
                 imageURL: '',
                 role: 'Administration Head',
@@ -336,33 +316,31 @@
                 description: ' A remarkable personality - Vinay, is handling administrations and operations of  Pepcus since beginning. His responsibilities include managing Corporate Finance,  Accounting, Payroll, Administration, Risk Management and Investor Relations.',
                 specialities: ' Administration | Finance'
             }, {
-
                 name: 'Purvi Jain',
                 imageURL: '',
                 role: 'HR Operations',
                 img1: 'images/team/purvi1.jpg',
                 img2: 'images/team/purvi-2.jpg',
-                description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She puts an amazing consistency, creativity and the passion in her work. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
-                specialities: 'HR Management | Social Media Branding'
+                description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
+                specialities:'HR Management | Social Media Branding'
             }
-
         ];
         var renderSecondaryTeam = function() {
             for (var j = 0; j < secondaryTeam.length; j++) {
                 var teamData = secondaryTeam[j];
-                var teamSpeciality = $('<div class = " col-lg-5 col-md-5 col-sm-6 col-xs-12">' +
+                var teamSpeciality = $('<div class = "col-lg-5 col-md-5 col-sm-6 col-xs-12">' +
                     '<div class = "team-container team-container-top">' +
                     '<div class="image-container">' +
                     '<div data-bgset = "' + teamData.img1 + '" class = "background-image white-shadow lazyload"></div>' +
                     '<div data-bgset = "' + teamData.img2 + '" class = "background-image hover white-shadow lazyload"></div></div>' +
-                    '<div class = "service-section-content service-content-block1 service-content-row3 back-white white-shadow">' +
+                    '<div class = "service-section-content service-content-block1 service-content-row2 back-white white-shadow">' +
                     '<div class="team-name primary-back text-center">' +
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
-                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-12 font-bold">' + teamData.role + '</h3>' +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14">' + teamData.description +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 text-left"><span class="font-bold text-left">' +
-                    'Specialities:</span>' + teamData.specialities + ' </p>' + '</p>' +
+                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-top-15 text-left"><span class="font-bold text-left">' +
+                    'Specialities:</span>' + teamData.specialities + '</p>' + '</p>' +
                     '</div>' +
                     '</div>' +
                     '</div>' +
@@ -390,8 +368,6 @@
                 } else {
                     $("#secondary_team").append(teamHTML);
                 }
-                // $("#secondary_team").append(teamHTML);
-
             }
         };
         var thirdTeam = [{
@@ -582,16 +558,13 @@
                     '</div>' +
                     '</div>' +
                     '</div>');
-
                 if (teamData.role != null && teamData.img2 != null) {
                     $("#third_team").append(teamHTML);
                 } else {
                     $("#third_team").append(teamOverlay);
                 }
-
             }
         };
-
         // });
         $(function() {
             $(document).ready(function() {
@@ -612,7 +585,6 @@
                                 if ($(this).css('opacity') == 1)
                                     $(this).css('opacity', '0');
                                 // $(this).toggle('hover-toggle');
-
                             }
                         });
                     $.fn.clickOff = function(callback, selfDestroy) {
