@@ -79,6 +79,12 @@
         </section>
         <!-- gallery section ends -->
 
+        <section>
+            <div class="scroll-top-section">
+                <a href="#" class="scrollup"><i class="fa fa-arrow-up arrow-up-icon" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
         <footer class="montserrat-font-family clear-both">
             <div class="footer-link padding-50-0">
                 <div class="container">
@@ -110,7 +116,7 @@
             <script type = "text/javascript" src = "js/jquery.fancybox.min.js"></script>
             <script type="text/javascript" src="js/lazyload.min.js"></script>
             <script type='application/javascript' src="js/jquery.mosaic.js"></script>
-            <script type='application/javascript' src="js/custom.min.js"></script>
+            <script type='application/javascript' src="js/custom.js"></script>
             <script type="text/javascript" charset="utf-8">
     	$(function() {
             $(document).ready(function() {
@@ -149,7 +155,6 @@
           $.each(navWrapper, function(key, value) {
             var htmlNavLink = "";
             $.each(value.navbarNavLink, function(key,desc) {
-              console.log("careers html nav link", desc.navHref);
               className = desc.class ? desc.class : '' ;
               htmlNavLink += "<li class=\""+className+"\"><a href=\""+desc.navHref+"\">"+desc.navLink+"</a>" +
                 "</li>";
@@ -287,7 +292,6 @@
             };
 
             });
-
         };
 
         var renderOpeningSection = function(openingBlock) {
@@ -297,8 +301,8 @@
               "<div class=\"card\">" +
               "<div class = \"card-heading\">" +
               "<h2 class = \"font-size-32 card-head-hover\">"+value.jobTitle+"</h2>" +
-              "<p class = \"line-height-16 font-size-14 mar-top-15\">"+value.jobShortDescription +"</p>" +
-              "<h3 class = \"font-size-18 mar-top-15\">"+ value.jobLocation+"</h3>" +
+              "<p class = \"line-height-16 font-size-14 mar-top-15\">"+value.jobExperience +"</p>" +
+              "<h3 class = \"font-size-14 mar-top-15\">"+ value.jobLocation+"</h3>" +
               "<div class = \"card-btn btn btn-more\">" +
               "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
               "</div>" +
@@ -541,8 +545,7 @@
         };
         var footerSocialWrapper = function(footerSocialIcons) {
           $.each(footerSocialIcons, function(key, value) {
-            //console.log("key", key, "valye", value,);
-            var htmlRender = "<a target=\"_self\" class=\"" +value.footerSocialClass+ "\"" +
+            var htmlRender = "<a target=\"_blank\" class=\"" +value.footerSocialClass+ "\"" +
               " href=\""+value.footerSocialHref+"\"" +
               " aria-label=\" "+value.footerLabel+" \"" +
               " rel=\"noopener\">" +

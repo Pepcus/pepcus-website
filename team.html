@@ -67,8 +67,9 @@
             <div class="row">
                 <div id="main_team"></div>
                 <div id="primary_team"></div>
+                <div id="secondary_team" class="col-lg-offset-2 col-md-offset-2"></div>
+<!--                <div id="secondary_team"></div>-->
             </div>
-
             <div id="third_team"></div>
 
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
@@ -154,15 +155,14 @@
                         <div class="footer-desc-para font-size-16 mar-bot-15"> We help customers to focus on their core business areas and let their IT needs be OUR RESPONSIBILITY.
                         </div>
                         <div class="padding-0-0-20">
-                            <a target="_self" class="fa fa-linkedin SocialMediaIcon" href="https://www.linkedin.com/company/pepcus-software-services-pvt-ltd-/"></a>
-                            <a target="_self" class="fa fa-facebook SocialMediaIcon" href="https://www.facebook.com/Pepcus-Software-Services-Private-Limited-449184531801853/"></a>
-                            <a target="_self" class="fa fa-instagram SocialMediaIcon" href="https://www.instagram.com/?hl=en"></a>
-                            <a target="_self" class="fa fa-youtube SocialMediaIcon" href="https://www.youtube.com/watch?v=U-pf-W33oTs"></a>
-                            <a target="_self" class="fa fa-twitter SocialMediaIcon" href="https://twitter.com/Pepcus_Software"></a>
-                            <a target="_self" class="abc" href="https://www.glassdoor.co.in/Overview/Working-at-Pepcus-EI_IE2032525.11,17.htm">
+                            <a target="_blank" class="fa fa-linkedin SocialMediaIcon" href="https://www.linkedin.com/company/pepcus-software-services-pvt-ltd-/"></a>
+                            <a target="_blank" class="fa fa-facebook SocialMediaIcon" href="https://www.facebook.com/Pepcus-Software-Services-Private-Limited-449184531801853/"></a>
+                            <a target="_blank" class="fa fa-instagram SocialMediaIcon" href="https://www.instagram.com/?hl=en"></a>
+                            <a target="_blank" class="fa fa-youtube SocialMediaIcon" href="https://www.youtube.com/watch?v=U-pf-W33oTs"></a>
+                            <a target="_blank" class="fa fa-twitter SocialMediaIcon" href="https://twitter.com/Pepcus_Software"></a>
+                            <a target="_blank" class="abc" href="https://www.glassdoor.co.in/Overview/Working-at-Pepcus-EI_IE2032525.11,17.htm">
                                 <span class="glassicon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify icon:simple-icons:glassdoor" data-inline="false" data-width="1em" data-height="1em" data-icon="simple-icons:glassdoor"><path d="M17.144 20.572H3.43A3.427 3.427 0 0 0 6.856 24h10.286a3.428 3.428 0 0 0 3.428-3.428V6.492a.123.123 0 0 0-.124-.125h-3.18a.125.125 0 0 0-.123.126v14.08zm0-20.572a3.429 3.429 0 0 1 3.427 3.43H6.858v14.078a.126.126 0 0 1-.125.125H3.554a.125.125 0 0 1-.125-.125V3.428A3.429 3.429 0 0 1 6.856 0h10.287" fill="currentColor"></path></svg></span>
                             </a>
-                            <a target="_self" class="fa fa-slideshare SocialMediaIcon" href="https://www.slideshare.net/Pepcus"></a>
                         </div>
 
                         <div class="footer-desc-link">
@@ -203,7 +203,7 @@
                 role: 'CEO & Founder',
                 img1: 'images/team/Ajay-1.jpg',
                 img2: 'images/team/Ajay-2.jpg',
-                description: ' Ajay transformed Pepcus delivering world-class services to customers, thereby created a sustainable long-term profitable growth. With over 15 years of experience on the complete spectrum of Software Development activities & having a key focus on quality, Ajay established strong relationship & trust with customers.' + '<p class = "secondary-color font-weight-300 line-height-16  font-size-14 mar-bot-15 text-justify">' +
+                description: ' Ajay transformed Pepcus delivering world-class services to customers, thereby created a sustainable long-term profitable growth. With over 15 years of experience on the complete spectrum of Software Development activities & having a key focus on quality, Ajay established strong relationship & trust with customers.' + '<p class = "secondary-color font-weight-300 line-height-16  font-size-14 mar-bot-12 text-justify">' +
                     'Considering people most important assets, his unique ideas about work culture & continuous encouragement on ‘fun @ work’ has turned Pepcus an amazing place to work.' + '</p>',
                 specialities: ' Client Relationship | Delivery Management | Project Management | Solution Architect'
             }, {
@@ -241,8 +241,8 @@
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-15 text-justify">' + teamData.description +
-                    '<p class="secondary-color font-weight-300 line-height-16 mar-bot-15 font-size-14 "><span class="font-bold">' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
+                    '<p class="secondary-color font-weight-300 line-height-16 mar-top-15 font-size-14 text-left "><span class="font-bold text-left">' +
                     'Specialities:</span>' + teamData.specialities + '  </p>' +
                     '</p>' +
                     '</div>' +
@@ -250,12 +250,6 @@
                     '</div>' +
                     '</div>');
                 $("#main_team").append(teamHTML);
-
-                //         main_team.addEventListener("click", function() {
-                //         console.log("Hello ");
-                //         /* Here, "this" refers to 1st div */
-                // });
-
             }
         };
 
@@ -277,7 +271,7 @@
                   '\n' +
                   ' \n' +
                   '\n' +
-                  'Leading a large team of testers and automation engineers, he significantly contributes to Pepcus’ USP ‘sell quality. Prior to Pepcus, he helped to make software organizations CMMI certified & thus adds tremendous value in Process Management for Pepcus..',
+                  'Prior to Pepcus, he helped to make software organizations CMMI certified & thus adds tremendous value in Process Management for Pepcus..',
                 specialities: ' Quality & Automation | Process Management'
             }, {
             name: 'Kuldeep Singh Shekhawat',
@@ -287,26 +281,7 @@
             img2: 'images/team/KuldeepF.jpg',
             description: ' Kuldeep has more than 7 years of IT experience in software development life cycle with Java/J2EE application development in complex, fast-paced environments. He works efficiently and successfully both alone and as a part of the team. By his in-depth knowledge of technologies, he really helps our customers in providing awesome business solutions.',
             specialities: ' JAVA/J2EE | SDLC '
-          },{
-
-          name: 'Vinay Jain',
-          imageURL: '',
-          role: 'Administration Head',
-          img1: 'images/team/vinay-1.jpg',
-          img2: 'images/team/vinay-2.jpg',
-          description: ' A remarkable personality - Vinay, is handling administrations and operations of  Pepcus since beginning. His responsibilities include managing Corporate Finance,  Accounting, Payroll, Administration, Risk Management and Investor Relations.',
-          specialities: ' Administration | Finance'
-        },{
-
-          name: 'Purvi Jain',
-          imageURL: '',
-          role: 'HR Operations',
-          img1: 'images/team/purvi1.jpg',
-          img2: 'images/team/purvi-2.jpg',
-          description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She puts an amazing consistency, creativity and the passion in her work. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
-          specialities: ' Social Media Branding |   HR'
-        }
-
+          }
         ];
         var renderPrimaryTeam = function() {
             for (var i = 0; i < primaryteam.length; i++) {
@@ -322,7 +297,7 @@
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
                     '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14"><span class="font-bold">' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-top-15 text-left"><span class="font-bold text-left">' +
                     'Specialities:</span>' + teamData.specialities + '  </p>' +
                     '</p>' +
                     '</div>' +
@@ -331,10 +306,8 @@
                     '</div>');
                 $("#primary_team").append(teamHTML);
             }
-
         };
          var secondaryTeam = [{
-
                 name: 'Vinay Jain',
                 imageURL: '',
                 role: 'Administration Head',
@@ -343,34 +316,31 @@
                 description: ' A remarkable personality - Vinay, is handling administrations and operations of  Pepcus since beginning. His responsibilities include managing Corporate Finance,  Accounting, Payroll, Administration, Risk Management and Investor Relations.',
                 specialities: ' Administration | Finance'
             }, {
-
                 name: 'Purvi Jain',
                 imageURL: '',
                 role: 'HR Operations',
                 img1: 'images/team/purvi1.jpg',
                 img2: 'images/team/purvi-2.jpg',
-                description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She puts an amazing consistency, creativity and the passion in her work. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
-                specialities: 'HR Management | Social Media Branding'
+                description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
+                specialities:'HR Management | Social Media Branding'
             }
-
         ];
         var renderSecondaryTeam = function() {
             for (var j = 0; j < secondaryTeam.length; j++) {
                 var teamData = secondaryTeam[j];
-                var teamSpeciality = $('<div class = " col-lg-5 col-md-5 col-sm-6 col-xs-12">' +
+                var teamSpeciality = $('<div class = "col-lg-5 col-md-5 col-sm-6 col-xs-12">' +
                     '<div class = "team-container team-container-top">' +
                     '<div class="image-container">' +
                     '<div data-bgset = "' + teamData.img1 + '" class = "background-image white-shadow lazyload"></div>' +
                     '<div data-bgset = "' + teamData.img2 + '" class = "background-image hover white-shadow lazyload"></div></div>' +
-                    '<div class = "service-section-content service-content-block1 service-content-row3 back-white white-shadow">' +
+                    '<div class = "service-section-content service-content-block1 service-content-row2 back-white white-shadow">' +
                     '<div class="team-name primary-back text-center">' +
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14">' + teamData.description +
-
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14"><span class="font-bold">' +
-                    'Specialities:</span>' + teamData.specialities + ' </p>' + '</p>' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-top-15 text-left"><span class="font-bold text-left">' +
+                    'Specialities:</span>' + teamData.specialities + '</p>' + '</p>' +
                     '</div>' +
                     '</div>' +
                     '</div>' +
@@ -385,7 +355,7 @@
                     '<div class="team-name primary-back text-center">' +
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
-                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
+                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-12 font-bold">' + teamData.role + '</h3>' +
                     '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-15">' + teamData.description +
                     '</p>' +
                     '</div>' +
@@ -398,8 +368,6 @@
                 } else {
                     $("#secondary_team").append(teamHTML);
                 }
-                // $("#secondary_team").append(teamHTML);
-
             }
         };
         var thirdTeam = [{
@@ -585,21 +553,18 @@
                     '<div class="team-name primary-back text-center">' +
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
-                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
+                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-12 font-bold">' + teamData.role + '</h3>' +
                     '</div>' +
                     '</div>' +
                     '</div>' +
                     '</div>');
-
                 if (teamData.role != null && teamData.img2 != null) {
                     $("#third_team").append(teamHTML);
                 } else {
                     $("#third_team").append(teamOverlay);
                 }
-
             }
         };
-
         // });
         $(function() {
             $(document).ready(function() {
@@ -620,9 +585,7 @@
                                 if ($(this).css('opacity') == 1)
                                     $(this).css('opacity', '0');
                                 // $(this).toggle('hover-toggle');
-
                             }
-                            console.log("hello this is mobile..!")
                         });
                     $.fn.clickOff = function(callback, selfDestroy) {
                     var clicked = false;
@@ -650,8 +613,7 @@
 
                  }
                      else {
-                        console.log("hello this is desktop..!")
-                      
+
                     }
 
                     $('.image-container').click(function() {

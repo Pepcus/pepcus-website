@@ -278,7 +278,6 @@
   RemovedSpaceCode = code.replace(/\s/g, '');
   $("#txtCaptchaDiv > span").html(code);
   $("input#txtCaptcha").val(RemovedSpaceCode);
-  console.log(code);
 </script>
 
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>-->
@@ -351,8 +350,6 @@
     });
   }
   function sendForm () {
-    console.log("verify", validForm);
-    console.log("captcha", validCaptcha);
     if (validForm && validCaptcha) {
       $('#submit').prop('disabled',false);
     } else {
@@ -464,7 +461,6 @@
 
                     // Use Ajax to submit form data
                     $.post($form.attr('action'), $form.serialize(), function(result) {
-                        console.log(result);
                     }, 'json');
                 });
     });

@@ -10,7 +10,7 @@ $(document).ready(function(e) {
         }
     });
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 3000) {
+        if ($(this).scrollTop() > 1500) {
             $('.scrollup').stop(!0, !0).fadeIn()
         } else {
             $('.scrollup').stop(!0, !0).fadeOut()
@@ -32,10 +32,12 @@ $(document).ready(function(e) {
 });
      
 var page = document.getElementById('page');
-var sections = page.getElementsByTagName('section');
-var transition = 'top 0.8s ease-in-out 0s';
-page.style.transition = transition;
-page.onclick = slideDown;
+// var sections = document.getElementsByTagName('section');
+// var x = document.getElementsByTagName("LI");
+
+// var transition = 'top 0.8s ease-in-out 0s';
+//  page.style.transition = transition;
+//  page.onclick = slideDown;
 
 function slideDown(e) {
     if (e.target.className != 'next') {
