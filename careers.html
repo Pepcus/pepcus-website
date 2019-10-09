@@ -4,20 +4,13 @@
 	<meta charset="utf-8">
     <meta name = "description" http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
     <link rel="icon" href="images/logo/favicon.ico" type="image/x-icon">
 	<title>Pepcus: Our Careers</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox-transitions.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.mosaic.min.css">
-    <link rel="stylesheet" href="css/demo.min.css">
-    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" type="text/css" href="css/careers.css">
+    <link rel="stylesheet" href="css/pepcus.css">
+<!--    <link rel="stylesheet" href="css/media.css">-->
+
 </head>
 <body id = "page">
 	<div class="loading">
@@ -48,7 +41,7 @@
 
         <!-- current opening section starts -->
         <section>
-            <div class = "services-section montserrat-font-family overflow-hidden sky-light padding-75-0-0 xxs-padding-30">
+            <div class="services-section montserrat-font-family overflow-hidden sky-light padding-75-0-0 xxs-padding-30">
                 <div class="container-fluid padding-0" id="current-opening-wrapper">
                     <div id="opening-title-wrapper"></div>
                     <div id="modal-content-wrapper"></div>
@@ -67,6 +60,7 @@
             </div>
         </section>
         <!-- current opening section ends -->
+
         <!-- gallery section starts -->
         <section class = "gallery-blog clear-both">
             <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
@@ -79,21 +73,12 @@
         </section>
         <!-- gallery section ends -->
 
-        <section>
-            <div class="scroll-top-section">
-                <a href="#" class="scrollup"><i class="fa fa-arrow-up arrow-up-icon" aria-hidden="true"></i></a>
-            </div>
-        </section>
-
         <footer class="montserrat-font-family clear-both">
             <div class="footer-link padding-50-0">
                 <div class="container">
                     <div class="col-md-8 col-sm-12 col-xxs-12 sm-overflow-hidden" id="footer-block">
-                        <div class="footer-primary-link col-sm-4" id="footer-primary">
-                        </div>
-                        <div class="footer-secondary-link col-sm-8" id="footer-secondary">
-
-                        </div>
+                        <div class="footer-primary-link col-sm-4" id="footer-primary"></div>
+                        <div class="footer-secondary-link col-sm-8" id="footer-secondary"></div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xxs-12">
                         <div class="footer-desc padding-50-25 secondary-color">
@@ -116,7 +101,7 @@
             <script type = "text/javascript" src = "js/jquery.fancybox.min.js"></script>
             <script type="text/javascript" src="js/lazyload.min.js"></script>
             <script type='application/javascript' src="js/jquery.mosaic.js"></script>
-            <script type='application/javascript' src="js/custom.js"></script>
+            <script type='application/javascript' src="js/custom.min.js"></script>
             <script type="text/javascript" charset="utf-8">
     	$(function() {
             $(document).ready(function() {
@@ -177,14 +162,13 @@
               "</div>" +
               "</nav>";
             $(htmlRender).appendTo("#nav-header");
-
           });
         };
 
         var renderBackgroundHeader = function(bgHeader) {
           $.each(bgHeader, function(key, value) {
             var htmlRender = "<div class=\"general-banner montserrat-font-family\">" +
-              "<div class=\"banner parallax general-team white-color flex-center text-center\">" +
+              "<div class=\"banner parallax general2-team white-color flex-center text-center\">" +
               "<div class=\"container\">" +
               "<div class=\"content\">" +
               "<h1 class=\"main-heading-inner font-size-50 font-bold\">"+value.headerTitle+"</h1>" +
@@ -290,7 +274,6 @@
                 event.target.style.display = "none";
               }
             };
-
             });
         };
 
@@ -300,9 +283,9 @@
               "<a onclick=\"openModal(\'"+value.onclickOpenModal+"\')\" target=\"_self\" >" +
               "<div class=\"card\">" +
               "<div class = \"card-heading\">" +
-              "<h2 class = \"font-size-32 card-head-hover\">"+value.jobTitle+"</h2>" +
-              "<p class = \"line-height-16 font-size-14 mar-top-15\">"+value.jobExperience +"</p>" +
-              "<h3 class = \"font-size-14 mar-top-15\">"+ value.jobLocation+"</h3>" +
+              "<h2 class = \"font-size-26 card-head-hover\">"+value.jobTitle+"</h2>" +
+              "<p class = \"line-height-16 font-size-16 mar-top-15\">"+value.jobExperience +"</p>" +
+              "<h3 class = \"font-size-16 mar-top-15\">"+ value.jobLocation+"</h3>" +
               "<div class = \"card-btn btn btn-more\">" +
               "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
               "</div>" +
@@ -477,7 +460,6 @@
             helpers: {
               title : {
                 type : 'outside'
-
               },
               overlay : {
                 speedIn : 200,
@@ -490,9 +472,6 @@
               title : {
                 type : 'inside'
               },
-
-              //buttons   : {}
-
             }
           });
           var content = "";
@@ -545,7 +524,7 @@
         };
         var footerSocialWrapper = function(footerSocialIcons) {
           $.each(footerSocialIcons, function(key, value) {
-            var htmlRender = "<a target=\"_blank\" class=\"" +value.footerSocialClass+ "\"" +
+            var htmlRender = "<a target=\"_self\" class=\"" +value.footerSocialClass+ "\"" +
               " href=\""+value.footerSocialHref+"\"" +
               " aria-label=\" "+value.footerLabel+" \"" +
               " rel=\"noopener\">" +
@@ -607,9 +586,6 @@
         };
 
         var fetchConfigAndRender = function () {
-          /*$.getJSON('careers.json', function (data) {
-            renderJOpage(data);
-          });*/
           $.ajax({
             url: 'careers.json',
             dataType: 'json',
@@ -626,7 +602,6 @@
 
         // start
         fetchConfigAndRender();
-
-            </script>
+     </script>
 </body>
 </html>

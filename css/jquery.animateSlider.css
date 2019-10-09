@@ -9,7 +9,6 @@
   top: 0;
   left: 0;
   width: 100%;
-
   padding:0;
   margin:0;
   }
@@ -40,11 +39,6 @@
   /* Initial position and style of each element in the Slide */
   /*                  demo1.css & demo2.css                  */
   /***********************************************************/
-  
-
-
-
-
 
   /*******Arrows********/
   nav.anim-arrows>span
@@ -114,11 +108,6 @@
   left: 2px;
   background: rgb(255,0,0);
   }
-
-
-
-
-
 
   /*!
   Animate.css - http://daneden.me/animate

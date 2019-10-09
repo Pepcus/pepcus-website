@@ -286,7 +286,7 @@
       "onclickOpenModal" : "java-lead",
       "jobDivWidthClass": " stripe2",
       "jobTitle": "JAVA LEAD",
-      "jobExperience": "Experience: 5-10 years",
+      "jobExperience": "Experience : 5-10 years",
       "jobLocation": "Job Location : Indore",
       "jobBtn":"See more",
       "jobDivBackgroundClass" : "java-lead-card"
@@ -295,7 +295,7 @@
       "onclickOpenModal" : "java-engineer",
       "jobDivWidthClass": " stripe1",
       "jobTitle": "JAVA Engineer",
-      "jobExperience": "Experience: 2-5 years",
+      "jobExperience": "Experience : 2-5 years",
       "jobLocation": "Job Location : Indore",
       "jobBtn":"See more",
       "jobDivBackgroundClass" : "java-engineer-card"
@@ -304,7 +304,7 @@
       "onclickOpenModal" : "react-engineer",
       "jobDivWidthClass": " stripe3",
       "jobTitle": "React Engineer",
-      "jobExperience": "Experience: 3-7 years",
+      "jobExperience": "Experience : 3-7 years",
       "jobLocation": "Job Location : Indore",
       "jobBtn":"See more",
       "jobDivBackgroundClass" : "react-engineer-card"
@@ -313,7 +313,7 @@
       "onclickOpenModal" : "devops-engineer",
       "jobDivWidthClass": " stripe2",
       "jobTitle": "Devops Engineer",
-      "jobExperience": "Experience: 3+ years",
+      "jobExperience": "Experience : 3+ years",
       "jobLocation": "Job Location : Indore",
       "jobBtn":"See more",
       "jobDivBackgroundClass" : "devops-engineer-card"
@@ -322,7 +322,7 @@
       "onclickOpenModal" : "qa-lead",
       "jobDivWidthClass": " stripe1",
       "jobTitle": "QA Lead",
-      "jobExperience": "Experience: 5-10 years",
+      "jobExperience": "Experience : 5-10 years",
       "jobLocation": "Job Location : Indore",
       "jobBtn":"See more",
       "jobDivBackgroundClass" : "qa-lead-card"
@@ -331,7 +331,7 @@
       "onclickOpenModal" : "qa-engineer",
       "jobDivWidthClass": " stripe3",
       "jobTitle": "QA Engineer",
-      "jobExperience": "Experience: 2-6 years",
+      "jobExperience": "Experience : 2-6 years",
       "jobLocation": "Job Location : Indore",
       "jobBtn":"See more",
       "jobDivBackgroundClass" : "qa-engineer-card"
@@ -340,7 +340,7 @@
       "onclickOpenModal" : "php-engineer",
       "jobDivWidthClass": " stripe2",
       "jobTitle": "PHP Engineer",
-      "jobExperience": "Experience: 3-7 years",
+      "jobExperience": "Experience : 3-7 years",
       "jobLocation": "Job Location : Indore",
       "jobBtn":"See more",
       "jobDivBackgroundClass" : "php-engineer-card"
@@ -354,62 +354,62 @@
   "techExpertise" : [
     {
       "iconSliderClass": "java-icon",
-      "img": "images/careers/java-icon.png",
+      "img": "images/techExpertise/java-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "",
-      "img": "images/careers/react-icon-neww.png",
+      "img": "images/techExpertise/react-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "backbone-icon",
-      "img": "images/careers/spring-icon-6.png",
+      "img": "images/techExpertise/spring-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "",
-      "img": "images/careers/angular-icon.png",
+      "img": "images/techExpertise/angular-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "",
-      "img": "images/careers/nodejs-icon-10.png",
+      "img": "images/techExpertise/nodejs-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "",
-      "img": "images/careers/jquery-icon-4.png",
+      "img": "images/techExpertise/jquery-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "",
-      "img": "images/careers/css3-icon.png",
+      "img": "images/techExpertise/css3-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "backbone-icon",
-      "img": "images/careers/struts-icon-3.png",
+      "img": "images/techExpertise/struts-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "",
-      "img": "images/careers/jsf-icon-5.png",
+      "img": "images/techExpertise/jsf-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "backbone-icon",
-      "img": "images/careers/primefaces-icon-5.png",
+      "img": "images/techExpertise/primefaces-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "",
-      "img": "images/careers/jsp-icon.png",
+      "img": "images/techExpertise/jsp-icon.png",
       "alt": ""
     },
     {
       "iconSliderClass": "backbone-icon",
-      "img": "images/careers/backbone-icon-2.png",
+      "img": "images/techExpertise/backbone-icon.png",
       "alt": ""
     }
   ],
@@ -420,160 +420,159 @@
   ],
   "gallerySliderWrapper": [
     {
-      "img":"images/sliders/s1.jpg",
+      "img":"images/gallery/s1.jpg",
       "alt": "slider 1 jpg"
     },
     {
-      "img":"images/sliders/s2.jpg",
+      "img":"images/gallery/s2.jpg",
       "alt": "slider 2 jpg"
     },
     {
-      "img":"images/sliders/s3.jpg",
+      "img":"images/gallery/s3.jpg",
       "alt": "slider 3 jpg"
     },
     {
-      "img":"images/sliders/s4.jpg",
+      "img":"images/gallery/s4.jpg",
       "alt": "slider 4 jpg"
     },
     {
-      "img":"images/sliders/s5.jpg",
+      "img":"images/gallery/s5.jpg",
       "alt": "slider 5 jpg"
     },
     {
-      "img":"images/sliders/s6.jpg",
+      "img":"images/gallery/s6.jpg",
       "alt": "slider 6 jpg"
     },
     {
-      "img":"images/sliders/s7.jpg",
+      "img":"images/gallery/s7.jpg",
       "alt": "slider 7 jpg"
     },
     {
-      "img":"images/sliders/s8.jpg",
+      "img":"images/gallery/s8.jpg",
       "alt": "slider 8 jpg"
     },
     {
-      "img":"images/sliders/s9.jpg",
+      "img":"images/gallery/s9.jpg",
       "alt": "slider 9 jpg"
     },
     {
-      "img":"images/sliders/s10.jpg",
+      "img":"images/gallery/s10.jpg",
       "alt": "slider 10 jpg"
     },
     {
-      "img":"images/sliders/s11.jpg",
+      "img":"images/gallery/s11.jpg",
       "alt": "slider 11 jpg"
     },
     {
-      "img":"images/sliders/s12.jpg",
+      "img":"images/gallery/s12.jpg",
       "alt": "slider 12 jpg"
     },
     {
-      "img":"images/sliders/s13.jpg",
+      "img":"images/gallery/s13.jpg",
       "alt": "slider 13 jpg"
     },
     {
-      "img":"images/sliders/s14.jpg",
-
+      "img":"images/gallery/s14.jpg",
       "alt": "slider 14 jpg"
     },
     {
-      "img":"images/sliders/s15.jpg",
+      "img":"images/gallery/s15.jpg",
       "alt": "slider 15 jpg"
     },
     {
-      "img":"images/sliders/s16.jpg",
+      "img":"images/gallery/s16.jpg",
       "alt": "slider 16 jpg"
     },
     {
-      "img":"images/sliders/s17.jpg",
+      "img":"images/gallery/s17.jpg",
       "alt": "slider 17 jpg"
     },
     {
-      "img":"images/sliders/s18.jpg",
+      "img":"images/gallery/s18.jpg",
       "alt": "slider 18 jpg"
     },
     {
-      "img":"images/sliders/s19.jpg",
+      "img":"images/gallery/s19.jpg",
       "alt": "slider 19 jpg"
     },
     {
-      "img":"images/sliders/s20.jpg",
+      "img":"images/gallery/s20.jpg",
       "alt": "slider 20 jpg"
     },
     {
-      "img":"images/sliders/s21.jpg",
+      "img":"images/gallery/s21.jpg",
       "alt": "slider 21 jpg"
     },
     {
-      "img":"images/sliders/s22.jpg",
+      "img":"images/gallery/s22.jpg",
       "alt": "slider 22 jpg"
     },
     {
-      "img":"images/sliders/s23.jpg",
+      "img":"images/gallery/s23.jpg",
       "alt": "slider 23 jpg"
     },
     {
-      "img":"images/sliders/s24.jpg",
+      "img":"images/gallery/s24.jpg",
       "alt": "slider 24 jpg"
     },
     {
-      "img":"images/sliders/s25.jpg",
+      "img":"images/gallery/s25.jpg",
       "alt": "slider 25 jpg"
     },
     {
-      "img":"images/sliders/s26.jpg",
+      "img":"images/gallery/s26.jpg",
       "alt": "slider 26 jpg"
     },
     {
-      "img":"images/sliders/s27.jpg",
+      "img":"images/gallery/s27.jpg",
       "alt": "slider 27 jpg"
     },
     {
-      "img":"images/sliders/s28.jpg",
+      "img":"images/gallery/s28.jpg",
       "alt": "slider 28 jpg"
     },
     {
-      "img":"images/sliders/s29.jpg",
+      "img":"images/gallery/s29.jpg",
       "alt": "slider 29 jpg"
     },
     {
-      "img":"images/sliders/s30.jpg",
+      "img":"images/gallery/s30.jpg",
       "alt": "slider 30 jpg"
     },
     {
-      "img":"images/sliders/s31.jpg",
+      "img":"images/gallery/s31.jpg",
       "alt": "slider 31 jpg"
     },
     {
-      "img":"images/sliders/s32.jpeg",
+      "img":"images/gallery/s32.jpeg",
       "alt": "slider 32 jpg"
     },
     {
-      "img":"images/sliders/s33.jpg",
+      "img":"images/gallery/s33.jpg",
       "alt": "slider 33 jpg"
     },
     {
-      "img":"images/sliders/s34.jpg",
+      "img":"images/gallery/s34.jpg",
       "alt": "slider 34 jpg"
     },
     {
-      "img":"images/sliders/s35.jpg",
+      "img":"images/gallery/s35.jpg",
       "alt": "slider 35 jpg"
     },
     {
-      "img":"images/sliders/s36.jpg",
+      "img":"images/gallery/s36.jpg",
       "alt": "slider 36 jpg"
     },
     {
-      "img":"images/sliders/s37.jpg",
+      "img":"images/gallery/s37.jpg",
       "alt": "slider 37 jpg"
     },
     {
-      "img":"images/sliders/s38.jpg",
+      "img":"images/gallery/s38.jpg",
       "alt": "slider 38 jpg"
     },
     {
-      "img":"images/sliders/s39.jpg",
+      "img":"images/gallery/s39.jpg",
       "alt": "slider 39 jpg"
     }
   ],
