@@ -21,6 +21,9 @@
     <div class="loading-image"><img src="images/loader/loader.gif" alt="loader" /></div>
 </div>
 <section>
+    <div id="walkin-content"></div>
+</section>
+<section>
     <nav class="navbar navbar-inverse navbar-fixed-top header-menu">
         <div class="container">
             <div class="navbar-header">
@@ -317,5 +320,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+  $(function () {
+    $("#walkin-content").load("walkin.html");
+  });
+</script>
 </body>
 </html>

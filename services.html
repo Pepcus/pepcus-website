@@ -18,7 +18,9 @@
 <div class="loading">
     <div class="loading-image"><img src="images/loader/loader.gif" alt="loader" /></div>
 </div>
-
+<section>
+    <div id="walkin-content"></div>
+</section>
 <section>
     <nav class="navbar navbar-inverse navbar-fixed-top header-menu">
         <div class="container">
@@ -275,8 +277,8 @@
 <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
+  $(function () {
+    $("#walkin-content").load("walkin.html");
   });
 </script>
 </body>

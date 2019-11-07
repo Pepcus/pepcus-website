@@ -24,6 +24,9 @@
     <div class="loading-image"><img src="images/loader/loader.gif" alt="loader" /></div>
 </div>
 <section>
+    <div id="walkin-content"></div>
+</section>
+<section>
     <nav class="navbar navbar-inverse navbar-fixed-top header-menu">
         <div class="container">
             <div class="navbar-header">
@@ -519,6 +522,11 @@
         });
     });
 
+</script>
+<script>
+  $(function () {
+    $("#walkin-content").load("walkin.html");
+  });
 </script>
 </body>
 </html>
