@@ -21,6 +21,9 @@
     <div class="loading">
         <div class="loading-image"><img src="images/loader/loader.gif" data-src="images/loader/loader.gif" class="lazy" alt="loader" /></div>
     </div>
+    <section>
+        <div id="walkin-content"></div>
+    </section>
     <!-- nav starts -->
     <section>
         <nav class="navbar navbar-inverse navbar-fixed-top header-menu">
@@ -633,6 +636,11 @@
         window.addEventListener('load', function() {
             new FastClick(document.body);
         }, false);
+    </script>
+    <script>
+      $(function () {
+        $("#walkin-content").load("walkin.html");
+      });
     </script>
 </body>
 </html>

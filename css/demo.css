@@ -57,7 +57,6 @@ table {
     border-spacing: 0;
 }
 
-
 .poppins-font-family{
     font-family: 'Poppins', sans-serif;
 }
@@ -470,6 +469,9 @@ img#github-logo{
 .font-size-14{
     font-size: 14px;
 }
+.font-size-28{
+    font-size: 28px;
+}
 .banner .content .main-heading-inner {
     margin-bottom: 25px;
 }
@@ -477,6 +479,106 @@ img#github-logo{
     margin-bottom: -50px;
     padding-top: 50px;
 }
+.banner .walkin-content .main-heading-inner {
+    margin-bottom: 25px;
+}
+.banner .walkin-content {
+    background-color: white;
+    padding-top: 25px;
+    border: 2px solid grey;
+    position: relative;
+    top: 90px;
+    color: #c54041;
+    padding-bottom: 40px;
+}
+.walkinbtn a{
+    background: #890606;
+    cursor: pointer;
+    margin-top: 1em;
+    text-decoration: none;
+    opacity: 1;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 28px;
+}
+.navbar-fixed-top{
+    top: 50px;
+}
+.walk-in-container {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    background: rgb(143, 28, 33);
+    left: 0;
+}
+.walkinbtn{
+    margin-top: 50px;
+}
+.walk-in-container marquee {
+    height: 50px;
+    padding-top: 16px;
+    width: calc(100% - 180px);
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 16px;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    }
+.walk-in-container a {
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff0000;
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width :767px){
+
+    .walk-in-container{
+        width: 80%;
+        height: 50px;
+    }
+    .walk-in-container marquee {
+
+        width: calc(100% - 10px);
+    }
+    /*.walk-in-container marquee{*/
+    /*    padding-top: 8px;*/
+    /*}*/
+    .walk-in-container a{
+        border: 2px solid red;
+        padding: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-decoration: none;
+        margin-bottom: 5px;
+        font-size:10px;
+        position: absolute;
+        right: -79px;
+    }
+    .banner .walkin-content{
+        position: relative;
+        top: 0;
+    }
+    .walkin-content h1{
+        font-size: 20px;
+    }
+    .walkin-content .walkinbtn a{
+        font-size:20px;
+    }
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
 .flex-center {
     display: flex;
     align-items: center;
@@ -1600,7 +1702,7 @@ svg{
         margin-bottom:10px;
     }
     .banner .content{
-        padding-top:0px;
+        /*padding-top:0px;*/
     }
     .general-img {min-height: 300px; }
     .general1-img{min-height: 400px;}
@@ -1650,6 +1752,13 @@ svg{
     }
     .img-responsive img{
         width:100%;
+    }
+    .walk-in-container marquee {
+        padding-top: 14px;
+        width: calc(100% - 170px);
+    }
+    .banner .content .main-heading-inner {
+         margin-bottom: 0px;
     }
 }
 @media(max-width:668px) {
@@ -1913,14 +2022,168 @@ svg{
     }
 
     .footer-primary-link {
-        display: inline-block;
+        width: 25%;
+        margin-top: 19px;
+        color: #dbd7d7;
+    }
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        border-color: #c54041;
+        background-color: #c54041;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: #c54041;
+        background-color: #c54041;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .change-height .navbar-toggle {
+        margin-top: 8px;
+    }
+    .navbar-toggle {
+        margin-top: 22px;
+        right: 10px;
+    }
+    .loading-image img {
+        width: 50px;
+    }
+    .loading-image {
+        margin-left: -25px;
+        margin-top: -25px;
+    }
+    .strength-img {
+        min-height: 250px;
+    }
+    .cwd-img {
+        min-height: 400px;
+    }
+    .sta-img {
+        min-height: 420px;
+    }
+    .mobile-img {
+        min-height: 370px;
+    }
+    .startup-img {
+        min-height: 350px;
+    }
+    .op-img {
+        min-height: 390px;
+    }
+    .goal-img {
+        min-height: 250px;
+    }
+    .font-size-26 {
+        font-size: 20px;
+    }
+    .anim-arrows {
+        display: none;
+    }
+    .services-section-bullet, .startup-list {
+        padding: 0 20px;
+        text-align: left;
+    }
+    .col-xxs-12 {
         width: 100%;
     }
-
-    .SocialMediaIcon {
-        padding: 6px;
-        font-size: 12px;
-        width: 25px;
+    .image-wrapper {
+        min-width: 30px;
+    }
+    .footer-desc {
+        margin-left: 0;
+        padding: 30px;
+    }
+    .footer-desc-copy {
+        font-size: 10px;
+    }
+    .footer-logo {
+        width: 40px;
+        /*margin: 0 auto 10px;*/
+    }
+    .footer-logo-small {
+        width: 32px;
+    }
+    .xxs-padding-20-10 {
+        padding: 20px 10px;
+    }
+    .xxs-padding-30 {
+        padding: 30px 0;
+    }
+    .xxs-margin-bot-25 {
+        margin-bottom: 25px;
+    }
+    .xxs-margin-bot-0 {
+        margin-bottom: 0;
+    }
+    .header-menu input ~ nav {
+        background-size: 0;
+    }
+    .header-menu input ~ nav > div.main-header-area {
+        width: 100%;
+        right: 0;
+        top: 100px;
+        max-height: 80%;
+        overflow-y: auto;
+    }
+    .header-menu input ~ nav > div.main-header-area > ul > li > a {
+        padding: 10px 25px 0;
+    }
+    .level1-header-link,
+    .level2-header-link {
+        width: 100%;
+    }
+    .scrollup {
+        bottom: 25px;
+        right: 25px;
+    }
+    .general-img {
+        min-height: 200px;
+    }
+    .general1-img {
+        min-height: 350px;
+    }
+    .general2-img {
+        min-height: 371px;
+    }
+    .general-team {
+        min-height: 300px;
+    }
+    .general-contact {
+        min-height: 350px;
+    }
+    .font-size-16 {
+        font-size: 13px;
+    }
+    .font-size-20 {
+        font-size: 14px;
+    }
+    .font-size-26 {
+        font-size: 22px;
+    }
+    .font-size-40 {
+        font-size: 20px;
+    }
+    .font-size-60 {
+        font-size: 32px;
+    }
+    .font-size-32 {
+        font-size: 22px;
+    }
+    .primary-btn {
+        padding: 10px 20px;
+    }
+    .xxs-margin-bot-15 {
+        margin-bottom: 15px;
+    }
+    .ceo-section-content {
+        display: block;
+    }
+    .accordian_content h3, .accordian-left {
+        margin-right: 0;
+    }
+    .accordian-right {
+        margin-left: 0;
+    }
+    .xxs-align-center {
         text-align: center;
         text-decoration: none;
         margin: auto;

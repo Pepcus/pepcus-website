@@ -28,6 +28,9 @@
         <!-- nav starts -->
         <div id="error-wrapper-block"></div>
         <div id="error-wrapper">
+         <section>
+           <div id="walkin-content"></div>
+         </section>
         <section id="nav-header"></section>
         </div>
         <!-- nav ends -->
@@ -189,6 +192,13 @@
               "<div class=\"content\">" +
               "<h1 class=\"main-heading-inner font-size-50 font-bold\">"+value.headerTitle+"</h1>" +
               "</div>" +
+              "<div class=\"walkin-content\">" +
+              "<h1 class=\"main-heading-inner font-size-28 font-bold\">"+value.walkinTitle+"</h1>" +
+              "<h1 class=\"main-heading-inner font-size-28 font-bold\">"+value.walkinDate+"</h1>" +
+              "<div class = \"walkinbtn\">" +
+              "<a href = \"https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUMU9VNzRPMVJPQkNGVEhCTVZNTk44WVVSWC4u\" class = \"\" target = \"_blank\">Register Now</a>"+"</div>"+
+              "</div>" +
+              "</div>" +
               "</div>" +
               "</div>" +
               "</div>";
@@ -219,7 +229,6 @@
         var renderModalContent = function(modalContent) {
 
           $.each(modalContent, function(key, value) {
-
             var htmlRenderJobList = "", htmlRenderKeyList = "", htmlRenderSkillList = "";
             $.each(value.jobDescription, function(key,desc){
               htmlRenderJobList += "<li>"+desc+"</li>";
@@ -628,5 +637,10 @@
         fetchConfigAndRender();
 
             </script>
+    <script>
+      $(function () {
+        $("#walkin-content").load("walkin.html");
+      });
+    </script>
 </body>
 </html>
