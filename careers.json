@@ -34,8 +34,8 @@
   "backgroundHeader": [
     {
       "headerTitle": "Let's Join us, Let's Grow Together",
-      "walkinTitle": "FRESHERS' MEGA WALK-IN DRIVE ",
-      "walkinDate": "16 NOVEMBER 2019",
+      "walkinTitle": "MEGA WALK-IN DRIVE ",
+      "walkinDate": "16th Nov 2019",
       "walkinBtn":"Register Now"
     }
   ],
@@ -414,6 +414,49 @@
       "iconSliderClass": "backbone-icon",
       "img": "images/careers/backbone-icon-2.png",
       "alt": ""
+    }
+  ],
+  "workspaceSliderTitle" : [
+    {
+      "workspaceSliderHeader" : "Let's Get on to your Dream Workplace!"
+    }
+  ],
+  "workspaceSectionSliderWrapper": [
+    {
+      "img":"images/workspace/work-1.jpg",
+      "alt": "slider 1 jpg"
+    },
+    {
+      "img":"images/workspace/work-2.jpg",
+      "alt": "slider 2 jpg"
+    },
+    {
+      "img":"images/workspace/work-3.jpg",
+      "alt": "slider 3 jpg"
+    },
+    {
+      "img":"images/workspace/work-4.jpg",
+      "alt": "slider 4 jpg"
+    },
+    {
+      "img":"images/workspace/work-5.jpg",
+      "alt": "slider 5 jpg"
+    },
+    {
+      "img":"images/workspace/work-6.jpg",
+      "alt": "slider 6 jpg"
+    },
+    {
+      "img":"images/workspace/work-7.jpg",
+      "alt": "slider 7 jpg"
+    },
+    {
+      "img":"images/workspace/work-8.jpg",
+      "alt": "slider 8 jpg"
+    },
+    {
+      "img":"images/workspace/work-9.png",
+      "alt": "slider 9 jpg"
     }
   ],
   "gallerySliderTitle" : [
