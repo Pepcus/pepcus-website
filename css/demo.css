@@ -542,14 +542,15 @@ img#github-logo{
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 10px;
+    right: 0;
     height: 10px;
     position: absolute;
 }
 
 .walk-in-container a span span{
-    content:'';
-    background: url(http://thomaspodgro.com/source/arrow.png);
+    content:"\f105";
+    font-family: FontAwesome;
+    color: #fff;
     display: block;
     width: 8px;
     top: 0;
@@ -562,8 +563,9 @@ img#github-logo{
 }
 
 .walk-in-container a .arrow:before {
-    content:"";
-    background: url(http://thomaspodgro.com/source/arrow.png);
+    content:"\f105";
+    font-family: FontAwesome;
+    color: #fff;
     display: block;
     width: 8px;
     top: 0;
@@ -576,8 +578,9 @@ img#github-logo{
 }
 
 .walk-in-container a .arrow:after {
-    content:"";
-    background: url(http://thomaspodgro.com/source/arrow.png);
+    content:"\f105";
+    font-family: FontAwesome;
+    color: #fff;
     display: block;
     width: 8px;
     top: 0;
