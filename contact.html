@@ -306,16 +306,16 @@
     function init_map() {
         var myOptions = {
             zoom: 13,
-            center: new google.maps.LatLng(22.7272694, 75.88389440000003),
+            center: new google.maps.LatLng(22.712438, 75.906379),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
         marker = new google.maps.Marker({
             map: map,
-            position: new google.maps.LatLng(22.7272694, 75.88389440000003)
+            position: new google.maps.LatLng(22.712438, 75.906379)
         });
         infowindow = new google.maps.InfoWindow({
-            content: '<strong>Pepcus Software Services Private Limited.</strong><br>201 Balaji Corporate House New Palasia Indore MP<br>'
+            content: '<strong>Pepcus Software Services Private Limited.</strong><br>15-FM, Sector-F, Ring Rd, behind Arpit Hospital, Scheme 94, Indore, Madhya Pradesh 452016<br>'
         });
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map, marker);
