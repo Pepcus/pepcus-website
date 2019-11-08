@@ -28,6 +28,9 @@
         <!-- nav starts -->
         <div id="error-wrapper-block"></div>
         <div id="error-wrapper">
+         <section>
+           <div id="walkin-content"></div>
+         </section>
         <section id="nav-header"></section>
         </div>
         <!-- nav ends -->
@@ -67,6 +70,14 @@
             </div>
         </section>
         <!-- current opening section ends -->
+    <section class = "gallery-blog clear-both">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
+            <div id="workspace-slider-title"></div>
+        </div>
+        <div class = "col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 mar-bot-50 gallery-section-slider">
+            <div class = "slider3 owl-carousel" id = "slider3"></div>
+        </div>
+    </section>
         <!-- gallery section starts -->
         <section class = "gallery-blog clear-both">
             <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
@@ -78,6 +89,12 @@
             <div class = "explore-more-btn clear-both text-center mar-bot-50 text-uppercase" id="explore-btn"></div>
         </section>
         <!-- gallery section ends -->
+
+        <section>
+            <div class="scroll-top-section">
+                <a href="#" class="scrollup"><i class="fa fa-arrow-up arrow-up-icon" aria-hidden="true"></i></a>
+            </div>
+        </section>
 
         <footer class="montserrat-font-family clear-both">
             <div class="footer-link padding-50-0">
@@ -107,10 +124,12 @@
             <script type='application/javascript' src="js/jquery-1.9.1.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             <script src="js/owl.carousel.js"></script>
+
             <script type = "text/javascript" src = "js/jquery.fancybox.min.js"></script>
             <script type="text/javascript" src="js/lazyload.min.js"></script>
             <script type='application/javascript' src="js/jquery.mosaic.js"></script>
-            <script type='application/javascript' src="js/custom.min.js"></script>
+
+            <script type='application/javascript' src="js/custom.js"></script>
             <script type="text/javascript" charset="utf-8">
     	$(function() {
             $(document).ready(function() {
@@ -149,7 +168,6 @@
           $.each(navWrapper, function(key, value) {
             var htmlNavLink = "";
             $.each(value.navbarNavLink, function(key,desc) {
-              console.log("careers html nav link", desc.navHref);
               className = desc.class ? desc.class : '' ;
               htmlNavLink += "<li class=\""+className+"\"><a href=\""+desc.navHref+"\">"+desc.navLink+"</a>" +
                 "</li>";
@@ -175,7 +193,6 @@
 
           });
         };
-
         var renderBackgroundHeader = function(bgHeader) {
           $.each(bgHeader, function(key, value) {
             var htmlRender = "<div class=\"general-banner montserrat-font-family\">" +
@@ -183,6 +200,13 @@
               "<div class=\"container\">" +
               "<div class=\"content\">" +
               "<h1 class=\"main-heading-inner font-size-50 font-bold\">"+value.headerTitle+"</h1>" +
+              "</div>" +
+              "<div class=\"walkin-content\">" +
+              "<h1 class=\"main-heading-inner font-size-28 font-bold\">"+value.walkinTitle+"</h1>" +
+              "<h1 class=\"main-heading-inner font-size-28 font-bold\">"+value.walkinDate+"</h1>" +
+              "<div class = \"walkinbtn\">" +
+              "<a href = \"https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUMU9VNzRPMVJPQkNGVEhCTVZNTk44WVVSWC4u\" class = \"\" target = \"_blank\">Register Now</a>"+"</div>"+
+              "</div>" +
               "</div>" +
               "</div>" +
               "</div>" +
@@ -210,11 +234,9 @@
             $(htmlRender).appendTo("#opening-title-wrapper");
           });
         };
-
         var renderModalContent = function(modalContent) {
 
           $.each(modalContent, function(key, value) {
-
             var htmlRenderJobList = "", htmlRenderKeyList = "", htmlRenderSkillList = "";
             $.each(value.jobDescription, function(key,desc){
               htmlRenderJobList += "<li>"+desc+"</li>";
@@ -287,9 +309,7 @@
             };
 
             });
-
         };
-
         var renderOpeningSection = function(openingBlock) {
           $.each(openingBlock, function(key, value) {
             var htmlRender = "<div class=\" "+ value.jobDivBackgroundClass +" padding-0 card-hover card-parallax card-mobile-height" +value.jobDivWidthClass+  " \">" +
@@ -297,8 +317,8 @@
               "<div class=\"card\">" +
               "<div class = \"card-heading\">" +
               "<h2 class = \"font-size-32 card-head-hover\">"+value.jobTitle+"</h2>" +
-              "<p class = \"line-height-16 font-size-14 mar-top-15\">"+value.jobShortDescription +"</p>" +
-              "<h3 class = \"font-size-18 mar-top-15\">"+ value.jobLocation+"</h3>" +
+              "<p class = \"line-height-16 font-size-14 mar-top-15\">"+value.jobExperience +"</p>" +
+              "<h3 class = \"font-size-14 mar-top-15\">"+ value.jobLocation+"</h3>" +
               "<div class = \"card-btn btn btn-more\">" +
               "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
               "</div>" +
@@ -398,6 +418,110 @@
               "</div></div>";
           }
           $("#slider").html(content);
+        };
+        var renderWorkspaceSectionTitle = function(workspaceTitle) {
+          $.each(workspaceTitle, function(key, value) {
+            var htmlRender = "<h3 class = \"font-size-40 line-height-13 font-bold text-center\">"
+              + value.workspaceSliderHeader +
+              "</h3>";
+            $(htmlRender).appendTo("#workspace-slider-title");
+          });
+        };
+        var renderWorkspaceSlider = function(workspaceSlider) {
+          $('.slider3').owlCarousel({
+            jsonPath : 'careers.json',
+            jsonSuccess : renderWorkspaceSlider,
+            loop:true,
+            nav: true,
+            items:3,
+            navigation: true,
+            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            margin:15,
+            navClass:["nav-prev", "nav-next"],
+            navigationClass:["nav-prev", "nav-next"],
+            autoplay:true,
+            slideSpeed : 200,
+            scrollPerPage : true,
+            dots: true,
+            autoPlay:true,
+            pagination: false,
+            slideTransition: 'linear',
+            autoWidth: false,
+            autoPlayHoverPause:true,
+            responsiveClass:true,
+            itemsCustom : [
+              [0,1],
+              [768, 3]
+            ],
+            responsive:{
+              0:{
+
+                items:1,
+                nav:false,
+                pagination: false,
+                page: false
+              },
+              600:{
+                items:2,
+                mouseDrag: true,
+                touchDrag: true,
+                nav:false,
+                pagination: false
+              },
+              1000:{
+                items:3,
+                mouseDrag: true,
+                touchDrag: true,
+                nav:true
+              }
+            }
+          });
+          $().fancybox({
+            prevEffect : 'false',
+            nextEffect : 'false',
+            closeBtn  : true,
+            arrows    : true,
+            nextClick : true,
+            'autoScale': true,
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'speedIn': 500,
+            'speedOut': 300,
+            'autoDimensions': true,
+            'centerOnScroll': true,
+            prevSpeed : 250,
+            helpers: {
+              title : {
+                type : 'outside'
+
+              },
+              overlay : {
+                speedIn : 200,
+                opacity : 0.95
+              },
+              thumbs : {
+                width: 75,
+                height: 50
+              },
+              title : {
+                type : 'inside'
+              },
+
+              //buttons   : {}
+
+            }
+          });
+          var content = "";
+          for(var i in workspaceSlider["workspaceSectionSliderWrapper"]) {
+
+            var img = workspaceSlider["workspaceSectionSliderWrapper"][i].img;
+            var alt = workspaceSlider["workspaceSectionSliderWrapper"][i].alt;
+            content += "<div class='item'>" +
+              "<a data-fancybox='gallery' href='"+img+"'>" +
+              "<img src=\"" +img+ "\" alt=\"" +alt+ "\" class='img-responsive'>" +
+              "</a></div>";
+          }
+          $("#slider3").html(content);
         };
         var renderGallerySliderTitle = function(galleryTitle) {
           $.each(galleryTitle, function(key, value) {
@@ -541,8 +665,7 @@
         };
         var footerSocialWrapper = function(footerSocialIcons) {
           $.each(footerSocialIcons, function(key, value) {
-            //console.log("key", key, "valye", value,);
-            var htmlRender = "<a target=\"_self\" class=\"" +value.footerSocialClass+ "\"" +
+            var htmlRender = "<a target=\"_blank\" class=\"" +value.footerSocialClass+ "\"" +
               " href=\""+value.footerSocialHref+"\"" +
               " aria-label=\" "+value.footerLabel+" \"" +
               " rel=\"noopener\">" +
@@ -560,7 +683,6 @@
             $(htmlRender).appendTo("#footer-desc-link");
           });
         };
-
         var footerDescTextWrapper = function(footerText) {
           $.each(footerText, function(key, value) {
             var htmlRender = "<div class=\"footer-copy padding-10-0\">" +
@@ -576,7 +698,6 @@
             $(htmlRender).appendTo("#footer-section");
           });
         };
-
         var renderJOpage = function (data) {
           renderNavWrapper(data.navigationWrapper);
           renderBackgroundHeader(data.backgroundHeader);
@@ -586,6 +707,8 @@
           renderOpeningSection(data.currentOpeningSection);
           renderTechExpertiseTitle(data.techExpertiseTitle);
           renderTechExpertiseSlider(data.techExpertise);
+          renderWorkspaceSectionTitle(data.workspaceSliderTitle);
+          renderWorkspaceSlider(data.workspaceSectionSliderWrapper);
           renderGallerySliderTitle(data.gallerySliderTitle);
           renderGallerySlider(data.gallerySliderWrapper);
           exploreGalleryBtn(data.exploreGalleryButton);
@@ -625,5 +748,10 @@
         fetchConfigAndRender();
 
             </script>
+    <script>
+      $(function () {
+        $("#walkin-content").load("walkin.html");
+      });
+    </script>
 </body>
 </html>

@@ -21,6 +21,9 @@
     <div class="loading">
         <div class="loading-image"><img src="images/loader/loader.gif" data-src="images/loader/loader.gif" class="lazy" alt="loader" /></div>
     </div>
+    <section>
+        <div id="walkin-content"></div>
+    </section>
     <!-- nav starts -->
     <section>
         <nav class="navbar navbar-inverse navbar-fixed-top header-menu">
@@ -67,8 +70,9 @@
             <div class="row">
                 <div id="main_team"></div>
                 <div id="primary_team"></div>
+                <div id="secondary_team" class="col-lg-offset-2 col-md-offset-2"></div>
+<!--                <div id="secondary_team"></div>-->
             </div>
-
             <div id="third_team"></div>
 
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
@@ -76,7 +80,7 @@
                  <a href="careers.html" class="text-decoration-hover-none">
                  <div class="team-container">
                     <div class="image-container image-container-small">
-                        <div data-bgset="images/team/user-icon8.png" class="background-image lazyload"></div>
+                        <div data-bgset="images/team/usericon.png" class="background-image lazyload"></div>
                         <div class="overlay">
                             <div class="text">?</div>
                         </div>
@@ -154,15 +158,14 @@
                         <div class="footer-desc-para font-size-16 mar-bot-15"> We help customers to focus on their core business areas and let their IT needs be OUR RESPONSIBILITY.
                         </div>
                         <div class="padding-0-0-20">
-                            <a target="_self" class="fa fa-linkedin SocialMediaIcon" href="https://www.linkedin.com/company/pepcus-software-services-pvt-ltd-/"></a>
-                            <a target="_self" class="fa fa-facebook SocialMediaIcon" href="https://www.facebook.com/Pepcus-Software-Services-Private-Limited-449184531801853/"></a>
-                            <a target="_self" class="fa fa-instagram SocialMediaIcon" href="https://www.instagram.com/?hl=en"></a>
-                            <a target="_self" class="fa fa-youtube SocialMediaIcon" href="https://www.youtube.com/watch?v=U-pf-W33oTs"></a>
-                            <a target="_self" class="fa fa-twitter SocialMediaIcon" href="https://twitter.com/Pepcus_Software"></a>
-                            <a target="_self" class="abc" href="https://www.glassdoor.co.in/Overview/Working-at-Pepcus-EI_IE2032525.11,17.htm">
+                            <a target="_blank" class="fa fa-linkedin SocialMediaIcon" href="https://www.linkedin.com/company/pepcus-software-services-pvt-ltd-/"></a>
+                            <a target="_blank" class="fa fa-facebook SocialMediaIcon" href="https://www.facebook.com/Pepcus-Software-Services-Private-Limited-449184531801853/"></a>
+                            <a target="_blank" class="fa fa-instagram SocialMediaIcon" href="https://www.instagram.com/?hl=en"></a>
+                            <a target="_blank" class="fa fa-youtube SocialMediaIcon" href="https://www.youtube.com/watch?v=U-pf-W33oTs"></a>
+                            <a target="_blank" class="fa fa-twitter SocialMediaIcon" href="https://twitter.com/Pepcus_Software"></a>
+                            <a target="_blank" class="abc" href="https://www.glassdoor.co.in/Overview/Working-at-Pepcus-EI_IE2032525.11,17.htm">
                                 <span class="glassicon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify icon:simple-icons:glassdoor" data-inline="false" data-width="1em" data-height="1em" data-icon="simple-icons:glassdoor"><path d="M17.144 20.572H3.43A3.427 3.427 0 0 0 6.856 24h10.286a3.428 3.428 0 0 0 3.428-3.428V6.492a.123.123 0 0 0-.124-.125h-3.18a.125.125 0 0 0-.123.126v14.08zm0-20.572a3.429 3.429 0 0 1 3.427 3.43H6.858v14.078a.126.126 0 0 1-.125.125H3.554a.125.125 0 0 1-.125-.125V3.428A3.429 3.429 0 0 1 6.856 0h10.287" fill="currentColor"></path></svg></span>
                             </a>
-                            <a target="_self" class="fa fa-slideshare SocialMediaIcon" href="https://www.slideshare.net/Pepcus"></a>
                         </div>
 
                         <div class="footer-desc-link">
@@ -201,25 +204,25 @@
                 name: 'Ajay Jain',
                 imageURL: '',
                 role: 'CEO & Founder',
-                img1: 'images/team/Ajay-1.jpg',
-                img2: 'images/team/Ajay-2.jpg',
-                description: ' Ajay transformed Pepcus delivering world-class services to customers, thereby created a sustainable long-term profitable growth. With over 15 years of experience on the complete spectrum of Software Development activities & having a key focus on quality, Ajay established strong relationship & trust with customers.' + '<p class = "secondary-color font-weight-300 line-height-16  font-size-14 mar-bot-15 text-justify">' +
+                img1: 'images/team/ajayj-1.jpg',
+                img2: 'images/team/ajayj-2.jpg',
+                description: ' Ajay transformed Pepcus delivering world-class services to customers, thereby created a sustainable long-term profitable growth. With over 15 years of experience on the complete spectrum of Software Development activities & having a key focus on quality, Ajay established strong relationship & trust with customers.' + '<p class = "secondary-color font-weight-300 line-height-16  font-size-14 mar-bot-12 text-justify">' +
                     'Considering people most important assets, his unique ideas about work culture & continuous encouragement on ‘fun @ work’ has turned Pepcus an amazing place to work.' + '</p>',
                 specialities: ' Client Relationship | Delivery Management | Project Management | Solution Architect'
             }, {
                 name: 'Surabhi Bhawsar',
                 imageURL: '',
                 role: 'Solution Architect',
-                img1: 'images/team/surabhi1.jpg',
-                img2: 'images/team/surabhi-2.jpg',
+                img1: 'images/team/surabhib-1.jpg',
+                img2: 'images/team/surabhib-2.jpg',
                 description: ' Surabhi is a diligent professional  having over 13+ years of experience in the Enterprise Application Architecture and Software Development. She is passionate about technology and uses her vast experience in architecting rock solid software.  Her strong logical mind & problem solving skills adds tremendous business value.',
                 specialities: ' Solution Architect | Research & Development'
             }, {
                 name: 'Ankit Bakliwal',
                 imageURL: '',
                 role: 'Lead - Engineering',
-                img1: 'images/team/ankit-1.jpg',
-                img2: 'images/team/ankit-3@.jpg',
+                img1: 'images/team/ankitb-1.jpg',
+                img2: 'images/team/ankitb-2.jpg',
                 description: ' A profound professional with  amazing management skills, a certified scrum master, Ankit is highly experienced in leading large size development teams. He has proved capabilities of producing outstanding results which led Pepcus business scaled exponentially. His personal interest in core technologies and innovation are a great asset to the company.',
                 specialities: ' Program Management | Technical Leadership'
             }
@@ -241,8 +244,8 @@
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-15 text-justify">' + teamData.description +
-                    '<p class="secondary-color font-weight-300 line-height-16 mar-bot-15 font-size-14 "><span class="font-bold">' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
+                    '<p class="secondary-color font-weight-300 line-height-16 mar-top-15 font-size-14 text-left "><span class="font-bold text-left">' +
                     'Specialities:</span>' + teamData.specialities + '  </p>' +
                     '</p>' +
                     '</div>' +
@@ -250,12 +253,6 @@
                     '</div>' +
                     '</div>');
                 $("#main_team").append(teamHTML);
-
-                //         main_team.addEventListener("click", function() {
-                //         console.log("Hello ");
-                //         /* Here, "this" refers to 1st div */
-                // });
-
             }
         };
 
@@ -263,50 +260,31 @@
                 name: 'Kapilesh Israni',
                 imageURL: '',
                 role: 'Solution Architect',
-                img1: 'images/team/kapilesh-1.jpg',
-                img2: 'images/team/kapilesh-2.jpg',
+                img1: 'images/team/kapileshi-1.jpg',
+                img2: 'images/team/kapileshi-2.jpg',
                 description: ' Particularly prompt with the advanced Java stack and client management skills, Kapilesh is a proficient technical manager having profound experience in developing software. His amazing presentation skills, determination & persistence are creating miracles at Pepcus.',
                 specialities: ' Research & Development | Advanced JAVA | Analytics'
             }, {
                 name: 'Ravi Prakash Agrawal',
                 imageURL: '',
                 role: 'QA Manager',
-                img1: 'images/team/Razxc.jpg',
-                img2: 'images/team/RaviF.jpg',
+                img1: 'images/team/ravia-1.jpg',
+                img2: 'images/team/ravia-2.jpg',
                 description: ' ISTQB & ITIL certified quality professional having experience of more than 14 years in IT.  Ravi has vast experience in the field of Software Quality & Process Management. \n' +
                   '\n' +
                   ' \n' +
                   '\n' +
-                  'Leading a large team of testers and automation engineers, he significantly contributes to Pepcus’ USP ‘sell quality. Prior to Pepcus, he helped to make software organizations CMMI certified & thus adds tremendous value in Process Management for Pepcus..',
+                  'Prior to Pepcus, he helped to make software organizations CMMI certified & thus adds tremendous value in Process Management for Pepcus..',
                 specialities: ' Quality & Automation | Process Management'
             }, {
             name: 'Kuldeep Singh Shekhawat',
             imageURL: '',
             role: 'Tech Lead',
-            img1: 'images/team/KuldeepP.jpg',
-            img2: 'images/team/KuldeepF.jpg',
+            img1: 'images/team/kuldeeps-1.jpg',
+            img2: 'images/team/kuldeeps-2.jpg',
             description: ' Kuldeep has more than 7 years of IT experience in software development life cycle with Java/J2EE application development in complex, fast-paced environments. He works efficiently and successfully both alone and as a part of the team. By his in-depth knowledge of technologies, he really helps our customers in providing awesome business solutions.',
             specialities: ' JAVA/J2EE | SDLC '
-          },{
-
-          name: 'Vinay Jain',
-          imageURL: '',
-          role: 'Administration Head',
-          img1: 'images/team/vinay-1.jpg',
-          img2: 'images/team/vinay-2.jpg',
-          description: ' A remarkable personality - Vinay, is handling administrations and operations of  Pepcus since beginning. His responsibilities include managing Corporate Finance,  Accounting, Payroll, Administration, Risk Management and Investor Relations.',
-          specialities: ' Administration | Finance'
-        },{
-
-          name: 'Purvi Jain',
-          imageURL: '',
-          role: 'HR Operations',
-          img1: 'images/team/purvi1.jpg',
-          img2: 'images/team/purvi-2.jpg',
-          description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She puts an amazing consistency, creativity and the passion in her work. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
-          specialities: ' Social Media Branding |   HR'
-        }
-
+          }
         ];
         var renderPrimaryTeam = function() {
             for (var i = 0; i < primaryteam.length; i++) {
@@ -322,7 +300,7 @@
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
                     '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14"><span class="font-bold">' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-top-15 text-left"><span class="font-bold text-left">' +
                     'Specialities:</span>' + teamData.specialities + '  </p>' +
                     '</p>' +
                     '</div>' +
@@ -331,46 +309,41 @@
                     '</div>');
                 $("#primary_team").append(teamHTML);
             }
-
         };
          var secondaryTeam = [{
-
                 name: 'Vinay Jain',
                 imageURL: '',
                 role: 'Administration Head',
-                img1: 'images/team/vinay-1.jpg',
-                img2: 'images/team/vinay-2.jpg',
+                img1: 'images/team/vinayj-1.jpg',
+                img2: 'images/team/vinayj-2.jpg',
                 description: ' A remarkable personality - Vinay, is handling administrations and operations of  Pepcus since beginning. His responsibilities include managing Corporate Finance,  Accounting, Payroll, Administration, Risk Management and Investor Relations.',
                 specialities: ' Administration | Finance'
             }, {
-
                 name: 'Purvi Jain',
                 imageURL: '',
                 role: 'HR Operations',
-                img1: 'images/team/purvi1.jpg',
-                img2: 'images/team/purvi-2.jpg',
-                description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She puts an amazing consistency, creativity and the passion in her work. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
-                specialities: 'HR Management | Social Media Branding'
+                img1: 'images/team/purvij-1.jpg',
+                img2: 'images/team/purvij-2.jpg',
+                description: ' Purvi is a seasoned professional with a demonstrated history of working in the computer software industry. She is a  versatile team player who is skilled in Public Speaking, Human Resource Management, Social Media Branding, and Creative Writing. She believes that" There is no magic formula for a great company culture. The key is just to treat your staff how you would like to be treated. ',
+                specialities:'HR Management | Social Media Branding'
             }
-
         ];
         var renderSecondaryTeam = function() {
             for (var j = 0; j < secondaryTeam.length; j++) {
                 var teamData = secondaryTeam[j];
-                var teamSpeciality = $('<div class = " col-lg-5 col-md-5 col-sm-6 col-xs-12">' +
+                var teamSpeciality = $('<div class = "col-lg-5 col-md-5 col-sm-6 col-xs-12">' +
                     '<div class = "team-container team-container-top">' +
                     '<div class="image-container">' +
                     '<div data-bgset = "' + teamData.img1 + '" class = "background-image white-shadow lazyload"></div>' +
                     '<div data-bgset = "' + teamData.img2 + '" class = "background-image hover white-shadow lazyload"></div></div>' +
-                    '<div class = "service-section-content service-content-block1 service-content-row3 back-white white-shadow">' +
+                    '<div class = "service-section-content service-content-block1 service-content-row2 back-white white-shadow">' +
                     '<div class="team-name primary-back text-center">' +
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
                     '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14">' + teamData.description +
-
-                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14"><span class="font-bold">' +
-                    'Specialities:</span>' + teamData.specialities + ' </p>' + '</p>' +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-12 text-justify">' + teamData.description +
+                    '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-top-15 text-left"><span class="font-bold text-left">' +
+                    'Specialities:</span>' + teamData.specialities + '</p>' + '</p>' +
                     '</div>' +
                     '</div>' +
                     '</div>' +
@@ -385,7 +358,7 @@
                     '<div class="team-name primary-back text-center">' +
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
-                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
+                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-12 font-bold">' + teamData.role + '</h3>' +
                     '<p class="secondary-color font-weight-300 line-height-16 font-size-14 mar-bot-15">' + teamData.description +
                     '</p>' +
                     '</div>' +
@@ -398,8 +371,6 @@
                 } else {
                     $("#secondary_team").append(teamHTML);
                 }
-                // $("#secondary_team").append(teamHTML);
-
             }
         };
         var thirdTeam = [{
@@ -407,160 +378,160 @@
           name: 'Sharad Namdeo',
           imageURL: '',
           role: 'Sr. Software Engineer',
-          img1: 'images/team/SharadP.jpg',
-          img2: 'images/team/SharadF.jpg'
+          img1: 'images/team/sharadn-1.jpg',
+          img2: 'images/team/sharadn-2.jpg'
 
         }, {
 
             name: 'Amit Jain',
             imageURL: '',
             role: 'Sr. Software Engineer',
-            img1: 'images/team/AmitP.jpg',
-            img2: 'images/team/AMITF.jpg'
+            img1: 'images/team/amitj-1.jpg',
+            img2: 'images/team/amitj-2.jpg'
 
           },{
 
                 name: 'Sandeep Vishwakarma',
                 imageURL: '',
                 role: 'Sr. Software Engineer',
-                img1: 'images/team/sandeep-1.jpg',
-                img2: 'images/team/sandeep-2.jpg'
+                img1: 'images/team/sandeepv-1.jpg',
+                img2: 'images/team/sandeepv-2.jpg'
 
             }, {
 
             name: 'Shivaji Patel',
             imageURL: '',
             role: 'Sr. Software Engineer',
-            img1: 'images/team/ShivajiP.jpg',
-            img2: 'images/team/ShivajiiF.jpg'
+            img1: 'images/team/shivajip-1.jpg',
+            img2: 'images/team/shivajip-2.jpg'
 
           },{
 
                 name: 'Sonam Agarwal',
                 imageURL: '',
                 role: 'Sr. Quality Engineer',
-                img1: 'images/team/Sonam-1.jpg',
-                img2: 'images/team/Sonam-2edit.jpg'
+                img1: 'images/team/sonama-1.jpg',
+                img2: 'images/team/sonama-2.jpg'
             }, {
 
                 name: 'Shubham Solanki',
                 imageURL: '',
                 role: 'Sr. Software Engineer',
-                img1: 'images/team/shubham-1.jpg',
-                img2: 'images/team/shubham-2edit.jpg'
+                img1: 'images/team/shubhams-1.jpg',
+                img2: 'images/team/shubhams-2.jpg'
             }, {
 
               name: 'Ashutosh Yadav',
               imageURL: '',
               role: 'Sr. Quality Engineer',
-              img1: 'images/team/AshutoshP.jpg',
-              img2: 'images/team/AshutoshF.jpg'
+              img1: 'images/team/ashutoshy-1.jpg',
+              img2: 'images/team/ashutoshy-2.jpg'
 
             },{
 
                 name: 'Shiva Jain',
                 imageURL: '',
                 role: 'Sr. Software Engineer',
-                img1: 'images/team/shivaP.jpg',
-                img2: 'images/team/shiva-2.jpg'
+                img1: 'images/team/shivaj-1.jpg',
+                img2: 'images/team/shivaj-2.jpg'
             }, {
 
                 name: 'Nikhil Bhadouriya',
                 imageURL: '',
                 role: 'Sr. Software Engineer',
-                img1: 'images/team/nikhilP.jpg',
-                img2: 'images/team/nikhilBH-2.jpg'
+                img1: 'images/team/nikhilb-1.jpg',
+                img2: 'images/team/nikhilb-2.jpg'
             }, {
 
                 name: 'Arpit Agrawal',
                 imageURL: '',
                 role: 'Sr. Quality Engineer',
-                img1: 'images/team/arpit-1.jpg',
-                img2: 'images/team/arpitedit-2.jpg'
+                img1: 'images/team/arpita-1.jpg',
+                img2: 'images/team/arpita-2.jpg'
             }, {
 
               name: 'Dhruv Lahoti',
               imageURL: '',
               role: 'Sr. Software Engineer',
-              img1: 'images/team/dhruv-1.jpg',
-              img2: 'images/team/dhruv-2edit.jpg'
+              img1: 'images/team/dhruvl-1.jpg',
+              img2: 'images/team/dhruvl-2.jpg'
             },{
 
                 name: 'Pratik Kulshreshth',
                 imageURL: '',
                 role: 'Sr. Software Engineer',
-                img1: 'images/team/prateek-1.jpg',
-                img2: 'images/team/prateekedit-2.jpg'
+                img1: 'images/team/prateekk-1.jpg',
+                img2: 'images/team/prateekk-2.jpg'
             }, {
 
                 name: 'Mahesh Namdev',
                 imageURL: '',
                 role: 'Software Engineer',
-                img1: 'images/team/MaheshP.jpg',
-                img2: 'images/team/nyy.jpg'
+                img1: 'images/team/maheshn-1.jpg',
+                img2: 'images/team/maheshn-2.jpg'
             }, {
 
                 name: 'Vishal Banerjee',
                 imageURL: '',
                 role: 'Quality Engineer',
-                img1: 'images/team/vishalP.jpg',
-                img2: 'images/team/vishalF.jpg'
+                img1: 'images/team/vishalb-1.jpg',
+                img2: 'images/team/vishalb-2.jpg'
             }, {
 
                 name: 'Nitin Soni',
                 imageURL: '',
                 role: 'Quality Engineer',
-                img1: 'images/team/nnssnn.jpg',
-                img2: 'images/team/Nitinf.jpg'
+                img1: 'images/team/nitins-1.jpg',
+                img2: 'images/team/nitins-2.jpg'
             }, {
 
                 name: 'Mohit Saladiya',
                 imageURL: '',
                 role: 'Software Engineer',
-                img1: 'images/team/mohitP.jpg',
-                img2: 'images/team/mohitF.jpg'
+                img1: 'images/team/mohits-1.jpg',
+                img2: 'images/team/mohits-2.jpg'
             }, {
 
                 name: 'Sandeep Kumar',
                 imageURL: '',
                 role: 'Software Engineer',
-                img1: 'images/team/sandeepKUM-1.jpg',
-                img2: 'images/team/sandeepKUM-2.jpg'
+                img1: 'images/team/sandeepk-1.jpg',
+                img2: 'images/team/sandeepk-2.jpg'
             }, {
 
                 name: 'Nikhil Mahajan',
                 imageURL: '',
                 role: 'Software Engineer',
-                img1: 'images/team/nikhilMAH-1.jpg',
-                img2: 'images/team/nikhilMAH-2.jpg'
+                img1: 'images/team/nikhilm-1.jpg',
+                img2: 'images/team/nikhilm-2.jpg'
             }, {
 
                 name: 'Ayush Malik',
                 imageURL: '',
                 role: 'Associate Software Engineer',
-                img1: 'images/team/ayush-1.jpg',
-                img2: 'images/team/ayush-2.jpg'
+                img1: 'images/team/ayushm-1.jpg',
+                img2: 'images/team/ayushm-2.jpg'
             }, {
 
                 name: 'Bhagyashree Bhoyar',
                 imageURL: '',
                 role: 'Associate Software Engineer',
-                img1: 'images/team/bhagyashree-1.jpg',
-                img2: 'images/team/bhagyashree-2.jpg'
+                img1: 'images/team/bhagyashreeb-1.jpg',
+                img2: 'images/team/bhagyashreeb-2.jpg'
             }, {
 
                 name: 'Palak Agrawal',
                 imageURL: '',
                 role: 'Associate Software Engineer',
-                img1: 'images/team/PalakP.jpg',
-                img2: 'images/team/PalakF.jpg'
+                img1: 'images/team/palaka-1.jpg',
+                img2: 'images/team/palaka-2.jpg'
             },{
 
               name: 'Raja Sathe',
               imageURL: '',
               role: 'Office Assistant',
-              img1: 'images/team/RajaP.jpg',
-              img2: 'images/team/RajaF.jpg'
+              img1: 'images/team/rajas-1.jpg',
+              img2: 'images/team/rajas-2.jpg'
 
         }
             // ,{
@@ -585,21 +556,18 @@
                     '<div class="team-name primary-back text-center">' +
                     '<h3 class="team-name-head white-color font-size-16">' + teamData.name + '</h3></div>' +
                     '<div class = "padding-50-25 text-center">' +
-                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-15 font-bold">' + teamData.role + '</h3>' +
+                    '<h3 class="services-section-head font-size-16 primary-color mar-bot-12 font-bold">' + teamData.role + '</h3>' +
                     '</div>' +
                     '</div>' +
                     '</div>' +
                     '</div>');
-
                 if (teamData.role != null && teamData.img2 != null) {
                     $("#third_team").append(teamHTML);
                 } else {
                     $("#third_team").append(teamOverlay);
                 }
-
             }
         };
-
         // });
         $(function() {
             $(document).ready(function() {
@@ -620,9 +588,7 @@
                                 if ($(this).css('opacity') == 1)
                                     $(this).css('opacity', '0');
                                 // $(this).toggle('hover-toggle');
-
                             }
-                            console.log("hello this is mobile..!")
                         });
                     $.fn.clickOff = function(callback, selfDestroy) {
                     var clicked = false;
@@ -650,8 +616,7 @@
 
                  }
                      else {
-                        console.log("hello this is desktop..!")
-                      
+
                     }
 
                     $('.image-container').click(function() {
@@ -671,6 +636,11 @@
         window.addEventListener('load', function() {
             new FastClick(document.body);
         }, false);
+    </script>
+    <script>
+      $(function () {
+        $("#walkin-content").load("walkin.html");
+      });
     </script>
 </body>
 </html>
