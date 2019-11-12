@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div id="main_team"></div>
-                <div id="primary_team"></div>
+                <div id="primary_team" class="col-lg-offset-2 col-md-offset-2"></div>
                 <div id="secondary_team" class="col-lg-offset-2 col-md-offset-2"></div>
 <!--                <div id="secondary_team"></div>-->
             </div>
@@ -281,7 +281,7 @@
         var renderPrimaryTeam = function() {
             for (var i = 0; i < primaryteam.length; i++) {
                 var teamData = primaryteam[i];
-                var teamHTML = $('<div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12">' +
+                var teamHTML = $('<div class = "col-lg-5 col-md-5 col-sm-6 col-xs-12">' +
                     '<div class = "team-container team-container-top">' +
                     '<div class="image-container">' +
                     '<div data-bgset = "' + teamData.img1 + '" class = "background-image white-shadow lazyload"></div>' +
