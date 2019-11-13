@@ -542,7 +542,7 @@ img#github-logo{
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 0;
+    right: 8px;
     height: 10px;
     position: absolute;
 }
@@ -556,7 +556,7 @@ img#github-logo{
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 0px;
+    right:10px;
     height: 10px;
     opacity: 1;
     position: absolute;
@@ -571,8 +571,8 @@ img#github-logo{
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 10px;
-    height: 10px;
+    right: 2px;
+    height: 15px;
     position: absolute;
     opacity: 0.5;
 }
@@ -586,8 +586,8 @@ img#github-logo{
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 20px;
-    height: 10px;
+    right: 9px;
+    height: 15px;
     position: absolute;
     opacity: 0.3;
 }
@@ -653,6 +653,14 @@ img#github-logo{
         display: block;
         padding: 10px 15px;
         font-size: 16px;
+    }
+    .walk-in-container a .arrow:before{
+        right: 2px;
+        height: 10px;
+    }
+    .walk-in-container a .arrow:after{
+        right: 9px;
+        height: 10px;
     }
     #slider3 .owl-next {
         right: -9px;
