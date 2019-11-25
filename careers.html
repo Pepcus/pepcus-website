@@ -30,6 +30,7 @@
         <div id="error-wrapper">
          <section>
            <div id="walkin-content"></div>
+
          </section>
         <section id="nav-header"></section>
         </div>
@@ -131,6 +132,17 @@
 
             <script type='application/javascript' src="js/custom.js"></script>
             <script type="text/javascript" charset="utf-8">
+              $(function () {
+                $("#walkin-content").load("walkin.html");
+              });
+
+              $(function () {
+                $.get("walkin-banner.html", function (data) {
+                  $("#notificationWalkin").append(data);
+                });
+              });
+
+
     	$(function() {
             $(document).ready(function() {
 
@@ -194,26 +206,19 @@
           });
         };
         var renderBackgroundHeader = function(bgHeader) {
-          $.each(bgHeader, function(key, value) {
-            var htmlRender = "<div class=\"general-banner montserrat-font-family\">" +
-              "<div class=\"banner parallax general-team white-color flex-center text-center\">" +
-              "<div class=\"container\">" +
-              "<div class=\"content\">" +
-              "<h1 class=\"main-heading-inner font-size-50 font-bold\">"+value.headerTitle+"</h1>" +
-              "</div>" +
-              "<div class=\"walkin-content\">" +
-              "<h1 class=\"main-heading-inner font-size-28 font-bold\">"+value.walkinTitle+"</h1>" +
-              "<h1 class=\"main-heading-inner font-size-28 font-bold\">"+value.walkinDate+"</h1>" +
-              "<div class = \"walkinbtn\">" +
-              "<a href = \"https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUMU9VNzRPMVJPQkNGVEhCTVZNTk44WVVSWC4u\" class = \"\" target = \"_blank\">Register Now</a>"+"</div>"+
-              "</div>" +
-              "</div>" +
-              "</div>" +
-              "</div>" +
-              "</div>";
-            $(htmlRender).appendTo("#section-header");
-          });
-        };
+                $.each(bgHeader, function(key, value) {
+                  var htmlRender = "<div class=\"general-banner montserrat-font-family\">" +
+                    "<div class=\"banner parallax general-team white-color flex-center text-center\">" +
+                    "<div class=\"container\">" +
+                    "<div class=\"content\">" +
+                    "<h1 class=\"main-heading-inner font-size-50 font-bold\">"+value.headerTitle+"</h1>" +
+                    "<div id='notificationWalkin'></div>"+
+                    "</div>" +
+                    "</div>" +
+                    "</div>";
+                  $(htmlRender).appendTo("#section-header");
+                });
+              };
         var renderHeader = function (headerInfo) {
           $.each(headerInfo, function(key, value) {
             var htmlRender = "<div class =\"col-lg-8 col-lg-offset-2 montserrat-font-family mar-50-auto pull-none\">" +
@@ -748,10 +753,5 @@
         fetchConfigAndRender();
 
             </script>
-    <script>
-      $(function () {
-        $("#walkin-content").load("walkin.html");
-      });
-    </script>
 </body>
 </html>
