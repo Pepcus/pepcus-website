@@ -279,12 +279,11 @@ h2#goal_para{
     width:600px;
     font-weight:100;
 }
-h2#goal_para span{
-    display:block;
-    text-align:center;
-    width:600px;
+h2#goal_para span {
+    display: block;
+    text-align: center;
+    width: 600px;
 }
-
 @-webkit-keyframes bounce {
  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateX(0);} 
  40% {-webkit-transform: translateX(-30px);}

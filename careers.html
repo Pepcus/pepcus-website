@@ -70,6 +70,8 @@
                 </div>
             </div>
         </section>
+
+
         <!-- current opening section ends -->
     <section class = "gallery-blog clear-both">
         <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
@@ -77,6 +79,16 @@
         </div>
         <div class = "col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 mar-bot-50 gallery-section-slider">
             <div class = "slider3 owl-carousel" id = "slider3"></div>
+        </div>
+    </section>
+
+    <section class = "gallery-blog clear-both">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
+            <div id= "benefit-section-title">
+            </div>
+        </div>
+        <div>
+            <div id= "benefit"></div>
         </div>
     </section>
         <!-- gallery section starts -->
@@ -528,6 +540,39 @@
           }
           $("#slider3").html(content);
         };
+
+        var renderBenefitSectionTitle = function(benefitTitle) {
+          $.each(benefitTitle, function(key, value) {
+            var htmlRender = "<h3 class = \"font-size-40 primary-color mar-bot-15 line-height-13 font-bold text-center\">"
+              + value.benefitSectionHeader +
+              "</h3>"
+            $(htmlRender).appendTo("#benefit-section-title");
+          });
+        };
+        var renderBenefitSectionWrapper = function(benefitSection){
+          var childImageContainer = "";
+          var parentImageContainer = "";
+          benefitSection.forEach(function(imageObject) {
+            var img =imageObject.img;
+            var alt = imageObject.alt;
+            var facilityDescription = imageObject.facilityDescription;
+            childImageContainer +=
+              "<div class='benefit-image-container'>"+
+              "<img src=\"" + img + "\" alt=\"" + alt + "\">"+
+              "<div class='benefit-overlay'>"+
+              "<div class='facilityText'>" + facilityDescription +
+              "</div>"+
+              "</div>"+
+              "</div>";
+          });
+          parentImageContainer +=
+            "<div class='mar-bot-35 benefit-container'>"+
+            childImageContainer +
+            "</div>";
+
+          $("#benefit").html(parentImageContainer);
+        };
+
         var renderGallerySliderTitle = function(galleryTitle) {
           $.each(galleryTitle, function(key, value) {
             var htmlRender = "<h3 class = \"font-size-40 line-height-13 font-bold text-center\">"
@@ -714,6 +759,8 @@
           renderTechExpertiseSlider(data.techExpertise);
           renderWorkspaceSectionTitle(data.workspaceSliderTitle);
           renderWorkspaceSlider(data.workspaceSectionSliderWrapper);
+          renderBenefitSectionTitle(data.benefitSectionTitle);
+          renderBenefitSectionWrapper(data.benefitSectionWrapper);
           renderGallerySliderTitle(data.gallerySliderTitle);
           renderGallerySlider(data.gallerySliderWrapper);
           exploreGalleryBtn(data.exploreGalleryButton);
