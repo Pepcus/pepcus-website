@@ -457,6 +457,53 @@
       "alt": "slider 9 jpg"
     }
   ],
+  "benefitSectionTitle" : [
+    {
+      "benefitSectionHeader" : "Few Reasons to Love Pepcus.."
+    }
+  ],
+  "benefitSectionWrapper": [
+    {
+      "img":"images/newimages/surbhi.jpg",
+      "alt": "img 1 jpg",
+      "facilityDescription": "Flexible Work Timings"
+    },
+    {
+      "img":"images/newimages/ankit.jpg",
+      "alt": "img 2 jpg",
+      "facilityDescription": "Open Door Policy"
+    },
+    {
+      "img":"images/newimages/palak.jpg",
+      "alt": "img 3 jpg",
+      "facilityDescription": "Amazing Work Culture"
+    },
+    {
+      "img":"images/newimages/shubham.jpg",
+      "alt": "img 4 jpg",
+      "facilityDescription": "Work from Home Facility"
+    },
+    {
+      "img":"images/newimages/arpit.jpg",
+      "alt": "img 5 jpg",
+      "facilityDescription": "Awesome Events and Outings"
+    },
+    {
+      "img":"images/newimages/kapilesh.jpg",
+      "alt": "img 6 jpg",
+      "facilityDescription": "5 Days A Week"
+    },
+    {
+      "img":"images/newimages/nikhil.jpg",
+      "alt": "img 7 jpg",
+      "facilityDescription": "Group Health Insurance"
+    },
+    {
+      "img":"images/newimages/sandeepv.jpg",
+      "alt": "img 8 jpg",
+      "facilityDescription": "Snacks on Monday & Friday"
+    }
+  ],
   "gallerySliderTitle" : [
     {
       "gallerySliderHeader" : "If work isn’t FUN, you are NOT playing on the right team"
