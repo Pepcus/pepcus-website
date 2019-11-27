@@ -2781,15 +2781,6 @@ svg{
             float: left;
             padding: 0 20px;
         }
-
-
-
-        /*.abc{*/
-        /*    margin:5px auto;*/
-        /*}*/
-        /*.SocialMediaIcon{*/
-        /*    margin:auto;*/
-        /*}*/
     }
     @media (max-width: 450px) {
         .img-responsive {
