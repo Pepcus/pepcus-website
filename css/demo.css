@@ -1553,8 +1553,6 @@ a.readMore {
     color: #c54041;
 }
 .clients .client-container .client-section a:hover > img{
-    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0);
     transform: scale(1.5);
     -webkit-transition: all 1s; /* Safari */
     transition: all 1s;
@@ -1565,8 +1563,6 @@ a.readMore {
 .clients .client-container .client-section a img {
     max-width: 120px;
     margin: 0 15px;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
     -webkit-transition: all 1s; /* Safari */
     transition: all 1s;
 }
