@@ -30,7 +30,6 @@
         <div id="error-wrapper">
          <section>
            <div id="walkin-content"></div>
-
          </section>
         <section id="nav-header"></section>
         </div>
@@ -73,12 +72,12 @@
 
 
         <!-- current opening section ends -->
-    <section class = "gallery-blog clear-both">
-        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
+    <section class="gallery-blog clear-both">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
             <div id="workspace-slider-title"></div>
         </div>
-        <div class = "col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 mar-bot-50 gallery-section-slider">
-            <div class = "slider3 owl-carousel" id = "slider3"></div>
+        <div class="col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 mar-bot-50 gallery-section-slider">
+            <div class="slider3 owl-carousel" id="slider3"></div>
         </div>
     </section>
 
@@ -87,10 +86,54 @@
             <div id= "benefit-section-title">
             </div>
         </div>
-        <div>
-            <div id= "benefit"></div>
-        </div>
     </section>
+
+    <div class="clear-both">
+        <section>
+            <div class="benefit-container">
+                <div class="benefit-image-container">
+                    <img src="images/newimages/surbhi.jpg">
+                    <img src="images/newimages/surbhitext.png" class="hvr-wobble-to-bottom-right">
+                </div>
+
+                <div class="benefit-image-container">
+                    <img src="images/newimages/ankit.jpg">
+                    <img src="images/newimages/ankittext.png" class="hvr-wobble-horizontal">
+                </div>
+
+                <div class="benefit-image-container">
+                    <img src="images/newimages/palak.jpg">
+                    <img src="images/newimages/palaktext.png" class="hvr-wobble-horizontal">
+                </div>
+
+                <div class="benefit-image-container">
+                    <img src="images/newimages/shubham.jpg">
+                    <img src="images/newimages/shubhamtext.png" class="hvr-wobble-horizontal">
+                </div>
+
+                <div class="benefit-image-container">
+                    <img src="images/newimages/arpit.jpg">
+                    <img src="images/newimages/arpittext.png" class="hvr-wobble-horizontal">
+                </div>
+
+                <div class="benefit-image-container">
+                    <img src="images/newimages/kapilesh.jpg">
+                    <img src="images/newimages/kapileshtext.png" class="hvr-wobble-horizontal">
+                </div>
+
+                <div class="benefit-image-container">
+                    <img src="images/newimages/nikhil.jpg">
+                    <img src="images/newimages/nikhiltext.png" class="hvr-wobble-to-bottom-right">
+                </div>
+
+                <div class="benefit-image-container">
+                    <img src="images/newimages/sandeep.jpg">
+                    <img src="images/newimages/sandeeptext.png" class="hvr-wobble-horizontal">
+                </div>
+            </div>
+        </section>
+    </div>
+
         <!-- gallery section starts -->
         <section class = "gallery-blog clear-both">
             <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 montserrat-font-family mar-50-auto">
@@ -115,9 +158,7 @@
                     <div class="col-md-8 col-sm-12 col-xxs-12 sm-overflow-hidden" id="footer-block">
                         <div class="footer-primary-link col-sm-4" id="footer-primary">
                         </div>
-                        <div class="footer-secondary-link col-sm-8" id="footer-secondary">
-
-                        </div>
+                        <div class="footer-secondary-link col-sm-8" id="footer-secondary"></div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xxs-12">
                         <div class="footer-desc padding-50-25 secondary-color">
@@ -555,10 +596,15 @@
           benefitSection.forEach(function(imageObject) {
             var img =imageObject.img;
             var alt = imageObject.alt;
+            var calloutDetails = imageObject.calloutDetails;
             var facilityDescription = imageObject.facilityDescription;
             childImageContainer +=
               "<div class='benefit-image-container'>"+
               "<img src=\"" + img + "\" alt=\"" + alt + "\">"+
+              "<div class='detail'>"+
+              "<span>"+ calloutDetails +
+              "</span>"+
+              "</div>"+
               "<div class='benefit-overlay'>"+
               "<div class='facilityText'>" + facilityDescription +
               "</div>"+
@@ -570,7 +616,7 @@
             childImageContainer +
             "</div>";
 
-          $("#benefit").html(parentImageContainer);
+          $("#benefitPart2").html(parentImageContainer);
         };
 
         var renderGallerySliderTitle = function(galleryTitle) {
@@ -772,12 +818,10 @@
           footerDescWrapper(data.footerDescLink);
           footerDescTextWrapper(data.footerDescText);
         };
-
         var renderErrorPage = function() {
             var htmlRender = "<div class=\"background-error-page\"></div>";
             $("#error-wrapper-block").append(htmlRender);
         };
-
         var fetchConfigAndRender = function () {
           /*$.getJSON('careers.json', function (data) {
             renderJOpage(data);
@@ -798,7 +842,6 @@
 
         // start
         fetchConfigAndRender();
-
             </script>
 </body>
 </html>
