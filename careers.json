@@ -464,43 +464,51 @@
   ],
   "benefitSectionWrapper": [
     {
-      "img":"images/newimages/surbhi.jpg",
+      "img":"images/newimages/surbhiNEW.jpg",
       "alt": "img 1 jpg",
+      "calloutDetails": "Flexible Work Timings",
       "facilityDescription": "Flexible Work Timings"
     },
     {
-      "img":"images/newimages/ankit.jpg",
+      "img":"images/newimages/anktNEW.jpg",
       "alt": "img 2 jpg",
+      "calloutDetails": "Open Door Policy",
       "facilityDescription": "Open Door Policy"
     },
     {
-      "img":"images/newimages/palak.jpg",
+      "img":"images/newimages/palakNEW.jpg",
       "alt": "img 3 jpg",
+      "calloutDetails": "Amazing Work Culture",
       "facilityDescription": "Amazing Work Culture"
     },
     {
-      "img":"images/newimages/shubham.jpg",
+      "img":"images/newimages/shubhmNEW.jpg",
       "alt": "img 4 jpg",
+      "calloutDetails": "Work from Home Facility",
       "facilityDescription": "Work from Home Facility"
     },
     {
-      "img":"images/newimages/arpit.jpg",
+      "img":"images/newimages/arpitNEW.jpg",
       "alt": "img 5 jpg",
+      "calloutDetails": "Awesome Events and Outings",
       "facilityDescription": "Awesome Events and Outings"
     },
     {
       "img":"images/newimages/kapilesh.jpg",
       "alt": "img 6 jpg",
+      "calloutDetails": "5 Days A Week",
       "facilityDescription": "5 Days A Week"
     },
     {
       "img":"images/newimages/nikhil.jpg",
       "alt": "img 7 jpg",
+      "calloutDetails": "Group Health Insurance",
       "facilityDescription": "Group Health Insurance"
     },
     {
-      "img":"images/newimages/sandeepv.jpg",
+      "img":"images/newimages/sandeepNEW1.jpg",
       "alt": "img 8 jpg",
+      "calloutDetails": "Snacks on Monday & Friday",
       "facilityDescription": "Snacks on Monday & Friday"
     }
   ],

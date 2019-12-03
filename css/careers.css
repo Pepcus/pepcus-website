@@ -83,66 +83,282 @@
 	left: 210px;
 	font-size: 40px;
 }
-.benefit-container{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+
+@-webkit-keyframes hvr-wobble-to-bottom-right {
+	16.65% {
+		-webkit-transform: translate(8px, 8px);
+		transform: translate(8px, 8px);
+	}
+
+	33.3% {
+		-webkit-transform: translate(-6px, -6px);
+		transform: translate(-6px, -6px);
+	}
+
+	49.95% {
+		-webkit-transform: translate(4px, 4px);
+		transform: translate(4px, 4px);
+	}
+
+	66.6% {
+		-webkit-transform: translate(-2px, -2px);
+		transform: translate(-2px, -2px);
+	}
+
+	83.25% {
+		-webkit-transform: translate(1px, 1px);
+		transform: translate(1px, 1px);
+	}
+
+	100% {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
 }
+@keyframes hvr-wobble-to-bottom-right {
+	16.65% {
+		-webkit-transform: translate(8px, 8px);
+		transform: translate(8px, 8px);
+	}
+
+	33.3% {
+		-webkit-transform: translate(-6px, -6px);
+		transform: translate(-6px, -6px);
+	}
+
+	49.95% {
+		-webkit-transform: translate(4px, 4px);
+		transform: translate(4px, 4px);
+	}
+
+	66.6% {
+		-webkit-transform: translate(-2px, -2px);
+		transform: translate(-2px, -2px);
+	}
+
+	83.25% {
+		-webkit-transform: translate(1px, 1px);
+		transform: translate(1px, 1px);
+	}
+
+	100% {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+}
+.hvr-wobble-to-bottom-right {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.benefit-image-container:hover .hvr-wobble-to-bottom-right {
+	-webkit-animation-name: hvr-wobble-to-bottom-right;
+	animation-name: hvr-wobble-to-bottom-right;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+@keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+.hvr-pulse {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.benefit-image-container:hover .hvr-pulse {
+	-webkit-animation-name: hvr-pulse;
+	animation-name: hvr-pulse;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes hvr-wobble-horizontal {
+	16.65% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+
+	33.3% {
+		-webkit-transform: translateX(-6px);
+		transform: translateX(-6px);
+	}
+
+	49.95% {
+		-webkit-transform: translateX(4px);
+		transform: translateX(4px);
+	}
+
+	66.6% {
+		-webkit-transform: translateX(-2px);
+		transform: translateX(-2px);
+	}
+
+	83.25% {
+		-webkit-transform: translateX(1px);
+		transform: translateX(1px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+@keyframes hvr-wobble-horizontal {
+	16.65% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+
+	33.3% {
+		-webkit-transform: translateX(-6px);
+		transform: translateX(-6px);
+	}
+
+	49.95% {
+		-webkit-transform: translateX(4px);
+		transform: translateX(4px);
+	}
+
+	66.6% {
+		-webkit-transform: translateX(-2px);
+		transform: translateX(-2px);
+	}
+
+	83.25% {
+		-webkit-transform: translateX(1px);
+		transform: translateX(1px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+.hvr-wobble-horizontal {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.benefit-image-container:hover .hvr-wobble-horizontal{
+	-webkit-animation-name: hvr-wobble-horizontal;
+	animation-name: hvr-wobble-horizontal;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: infinite;
+}
+
+.benefit-container{
+	 display: flex;
+	 flex-wrap: wrap;
+ }
 .benefit-image-container {
 	width: 25%;
 	box-sizing: border-box;
 	position: relative;
 }
-.benefit-image-container img {
+.benefit-image-container img:first-child {
+	width: 100%;
+	vertical-align:middle;
+}
+
+.benefit-image-container img:last-child {
+	width: 97%;
 	vertical-align: middle;
-	width: 100%;
-}
-.benefit-overlay {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	left: 0;
-	right: 0;
-	background-color: #e05451;
-	opacity: 0.8;
-	overflow: hidden;
-	width: 100%;
-	height: 0;
-	transition: .5s ease;
-	transform:scale(0);
 }
 
-.benefit-image-container:hover .benefit-overlay {
-	height: 100%;
-	transform: scale(1);
-}
-.benefit-image-container:hover img{
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
-.facilityText {
-	width: 70%;
-	color: #ffffff;
-	font-size: 26px;
-	/*font-weight: 700;*/
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
+@media (min-width:1024px) and (max-width:1366px){
+		.detail:before {
+			border: 9px solid transparent;
+			border-top: 32px solid rgba(245, 5, 5, 1);
+			border-top: 71px solid rgba(245, 5, 5, 1);
+			}
+			.benefits {
+				display: flex;
+				padding: 15px;
+				font-size: 14px;
+				line-height: 1.2;
+			}
+			.detail {
+				width: 100px;
+			}
+	}
+	@media (min-width:768px) and (max-width:1023px){
+		.benefits {
+			display: flex;
+			padding: 15px;
+			font-size: 12px;
+			line-height: 1.2;
+		}
+		.detail {
+			width: 100px;
+		}
+		.detail:before{
+			border: 6px solid transparent;
+			border-top: 50px solid rgba(245, 5, 5, 1);
+		}
+	}
+	@media(max-width: 992px) {
 	.benefit-image-container {
 		width: 50%;
 	}
-}
-@media only screen and (max-width: 320px) {
+	.benefit-image-container img:last-child {
+		width: 96%;
+	  }
+	}
+	@media only screen and (max-width: 640px) {
 	.benefit-image-container {
 		width: 100%;
 	}
-}
+	}
 a{
 	color:#6c6d6d;
 }
@@ -150,7 +366,6 @@ a{
 	color: #464642;
 }
 .parallax {
-	/*background-position: center;*/
 	background-attachment: fixed;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -244,7 +459,6 @@ a{
 	top: 50%;
 	text-align: center;
 	color: white;
-	/* transform: translateY(-50%); */
 	vertical-align: top;
 }
 .card-image-text a {
@@ -265,14 +479,12 @@ a{
 	cursor: pointer;
 	transition: 0.4s opacity;
 	transition-delay: 0.4s;
-	/* display: block; */
 	opacity: 1;
 }
 .card-hover:hover a {
 	cursor: pointer;
 	transition: 0.4s opacity;
 	transition-delay: 0.6s;
-	/* display: inline-block; */
 	opacity: 1;
 }
 
@@ -320,14 +532,12 @@ a{
 	background-position: 50% 70%;
 }
 .slider-arrow {
-	/* background: #ea2a2a; */
 	background: -webkit-linear-gradient(#f23737,#b45252);
 	border: none;
 	font-size: 25px;
 	padding: 10px;
 	color: white;
 	opacity: 0;
-	/* cursor: pointer; */
 	border-radius: 10px;
 	position: absolute;
 	top: 50%;
@@ -464,9 +674,6 @@ svg {
 	transition: all 1s;
 }
 #slider .client-section  img {
-	/* max-height: 100%; */
-	/*min-height: 83px;*/
-	/*height:55px;*/
 	max-height: 120px;
 	width: auto;
 }
@@ -711,13 +918,6 @@ svg {
 #slider3 .owl-pagination {
 	display: contents;
 }
-/*@media (min-width:1433px) and (max-width:1485px){
-.react-engineer-card{
-	width: 450px;
-	height:20px;
-}
-}*/
-
 @media only screen and (max-width: 1201px) {
 	.card-hover:hover::before {
 		width: 100%;
