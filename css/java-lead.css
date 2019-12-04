@@ -36,10 +36,6 @@
 	margin-top: 0.5em;
 	color: white;
 }
-/* .card-hover:hover .btn-more {
-	transition: 0.6s opacity;
-    transition-delay: 0.6s;
-} */
 .card-hover:hover h2 {
 	transition-delay: 0.2s;
 }
