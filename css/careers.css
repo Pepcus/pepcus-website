@@ -420,9 +420,6 @@ a{
 .font-size-16 {
 	font-size:16px;
 }
-.modal-content{
-	width:90%;
-}
 .card-hover:hover::before {
 	width: 100%;
 	cursor: pointer;
@@ -800,7 +797,7 @@ svg {
 /* Modal Content */
 .modal-content {
 	background-color: #fefefe;
-	margin: 5px auto;
+	margin: 85px auto;
 	padding: 0;
 	border: 1px solid #464642;
 	width: 70%;
@@ -1113,6 +1110,11 @@ svg {
 		float: none;
 		margin: 20px auto;
 	}
+    .modal-content {
+        margin: 190px auto;
+        width: 90%;
+        height: 50%;
+    }
 
 }
 @media (min-width:768px) and (max-width:992px) {
@@ -1280,6 +1282,7 @@ svg {
 		}
 
 		.modal-content {
+            margin: 200px auto;
 			width: 90%;
 		}
 
@@ -1426,7 +1429,7 @@ svg {
 
 			.modal-content {
 				width: 90%;
-				margin: 26px 5px;
+				margin: 70px 24px;
 			}
 
 			.file-wrapper {
