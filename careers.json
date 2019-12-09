@@ -632,7 +632,7 @@
       "alt": "slider 28 jpg"
     },
     {
-      "img":"images/sliders/s29.jpg",
+      "img":"images/sliders/s29.jpeg",
       "alt": "slider 29 jpg"
     },
     {
@@ -644,7 +644,7 @@
       "alt": "slider 31 jpg"
     },
     {
-      "img":"images/sliders/s32.jpeg",
+      "img":"images/sliders/s32.jpg",
       "alt": "slider 32 jpg"
     },
     {
@@ -662,18 +662,6 @@
     {
       "img":"images/sliders/s36.jpg",
       "alt": "slider 36 jpg"
-    },
-    {
-      "img":"images/sliders/s37.jpg",
-      "alt": "slider 37 jpg"
-    },
-    {
-      "img":"images/sliders/s38.jpg",
-      "alt": "slider 38 jpg"
-    },
-    {
-      "img":"images/sliders/s39.jpg",
-      "alt": "slider 39 jpg"
     }
   ],
   "exploreGalleryButton" : [
