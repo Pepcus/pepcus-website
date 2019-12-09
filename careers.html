@@ -22,7 +22,7 @@
 <body id = "page">
 	<div class="loading">
         <div class="loading-image">
-            <img src="images/loader/loader.gif" data-src="images/loader/loader.gif" class="lazy" alt="loader" />
+            <img src="images/loader/newloader.gif" data-src="images/loader/newloader.gif" class="lazy" alt="loader" />
         </div>
     </div>
         <!-- nav starts -->
@@ -152,18 +152,22 @@
             </div>
         </section>
 
+    <div id="footerContent">
         <footer class="montserrat-font-family clear-both">
             <div class="footer-link padding-50-0">
                 <div class="container">
-                    <div class="col-md-8 col-sm-12 col-xxs-12 sm-overflow-hidden" id="footer-block">
+                    <div class="primary-container col-md-8 col-sm-12 col-xxs-12 sm-overflow-hidden" id="footer-block">
                         <div class="footer-primary-link col-sm-4" id="footer-primary">
+                            <ul>
+
+                            </ul>
                         </div>
                         <div class="footer-secondary-link col-sm-8" id="footer-secondary"></div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xxs-12">
                         <div class="footer-desc padding-50-25 secondary-color">
                             <div class="footer-desc-head" id="footer-logo-block"></div>
-                            <div class="footer-desc-para font-size-16 mar-bot-15" id="footer-para-block"></div>
+                            <div class="footer-desc-para font-size-20 mar-bot-15 line-height-13" id="footer-para-block"></div>
                             <div class="padding-0-0-20" id="footer-social-icon"></div>
                             <div class="footer-desc-link" id="footer-desc-link"></div>
                         </div>
@@ -172,6 +176,7 @@
             </div>
             <div id="footer-section"></div>
         </footer>
+    </div>
         <!-- footer section ends -->
 
 
@@ -435,7 +440,7 @@
             itemsCustom : [
               [0, 2],
               [768, 4],
-              [1200, 5]
+              [1200, 6]
             ],
             responsive: {
               0: {
@@ -454,7 +459,7 @@
 
               },
               1000: {
-                item: 5,
+                item: 6,
                 mouseDrag: true,
                 touchDrag: true,
                 nav: false,
@@ -728,12 +733,13 @@
           });
         };
         var footerSectionHyperlink = function(footerHyperlink) {
+          var htmlRender='';
           $.each(footerHyperlink, function(key, value) {
-            var htmlRender = "<ul>" +
-              "<li><a href=\"index.html\" class=\"link-footer secondary-color\">"+value.footerPrimaryTitle+"</a></li>" +
-              "</ul>";
-            $(htmlRender).appendTo("#footer-primary");
+             htmlRender = "<li><a href=\"index.html\" class=\"link-footer secondary-color\">"+value.footerPrimaryTitle+"</a></li>";
+            $(htmlRender).appendTo("#footer-primary ul");
+
           });
+
         };
         var footerSecondaryTitle = function(footerSecondary) {
           $.each(footerSecondary, function(key, value) {
@@ -771,7 +777,7 @@
         var footerDescWrapper = function(footerDesc) {
           $.each(footerDesc, function(key, value) {
             var htmlRender = "<div>" +
-              "<a class=\" primary-color font-size-16 font-bold\" href=\"mailto:info@pepcus.com?\" target=\"_self\">" +value+
+              "<a class=\" primary-color font-size-20 font-bold\" href=\"mailto:info@pepcus.com?\" target=\"_self\">" +value+
               "</a>" +
             "</div>";
             $(htmlRender).appendTo("#footer-desc-link");
