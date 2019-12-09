@@ -4,7 +4,7 @@
       "navLogoSrc": "images/logo/logonew.png",
       "navbarNavLink" : [
         {
-          "navHref" : "index.html",
+          "navHref" : "http://pepcus.com/",
           "navLink": "Home"
         },
         {
@@ -729,7 +729,7 @@
   "pepcusFooterLogo" : [
     {
       "logoSrc" : "images/logo/logo-small.png",
-      "logoHref" : "index.html",
+      "logoHref" : "http://pepcus.com/",
       "logoWidth" : "50"
     }
   ],

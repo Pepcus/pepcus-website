@@ -420,6 +420,9 @@ a{
 .font-size-16 {
 	font-size:16px;
 }
+.font-size-20 {
+	font-size:20px;
+}
 .card-hover:hover::before {
 	width: 100%;
 	cursor: pointer;
@@ -1115,13 +1118,14 @@ svg {
         width: 90%;
         height: 50%;
     }
-
 }
 @media (min-width:768px) and (max-width:992px) {
+	.nicescroll-rails-hr ,.nicescroll-cursors{
+		display: none;
+	}
 	.react-engineer-card {
 		width: 250px;
 	}
-
 	.stripe1 {
 		width: 500px;
 		height: 331px;
@@ -1223,7 +1227,7 @@ svg {
 		margin-left: 13px;
 	}
 }
-	@media (min-width: 601px) and (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 767px) {
 		.form-horizontal .control-label {
 			padding-left: 0;
 			padding-right: 0;
@@ -1307,7 +1311,7 @@ svg {
 			display: none;
 		}
 	}
-		@media (min-width: 481px) and (max-width: 600px) {
+@media (min-width: 481px) and (max-width: 600px) {
 			.card-hover:hover::before {
 				width: 100%;
 				cursor: pointer;
@@ -1410,7 +1414,7 @@ svg {
 				margin-right: -10px;
 			}
 		}
-		@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
 			.card-hover:hover::before {
 				width: 100%;
 				cursor: pointer;
@@ -1590,5 +1594,14 @@ svg {
 				top: 2px;
 			}
 		}
+@media(max-width:767px){
+	.footer-secondary-link >ul:first-child{
+		display: block!important;
+	}
+	.footer-secondary-link >ul{
+		display: none;
+	}
+
+}
 
 
