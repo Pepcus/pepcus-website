@@ -4,7 +4,7 @@
       "navLogoSrc": "images/logo/logonew.png",
       "navbarNavLink" : [
         {
-          "navHref" : "http://pepcus.com/",
+          "navHref" : "index.html",
           "navLink": "Home"
         },
         {
@@ -690,6 +690,12 @@
       "footerPrimaryTitle": "About"
     },
     {
+      "footerPrimaryTitle": "Services"
+    },
+    {
+      "footerPrimaryTitle": "Careers"
+    },
+    {
       "footerPrimaryTitle": "Team"
     },
     {
@@ -729,7 +735,7 @@
   "pepcusFooterLogo" : [
     {
       "logoSrc" : "images/logo/logo-small.png",
-      "logoHref" : "http://pepcus.com/",
+      "logoHref" : "index.html",
       "logoWidth" : "50"
     }
   ],

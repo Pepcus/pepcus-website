@@ -2531,7 +2531,7 @@ svg{
             color: #dbd7d7;
         }
 
-        .footer-primary-link {
+        .footer-primary-link{
             width: 25%;
             margin-top: 19px;
             color: #dbd7d7;
@@ -2542,9 +2542,13 @@ svg{
         .footer-secondary-link > ul li{
             display: none;
         }
-        .footer-secondary-link >ul li:first-child{
-            display: block!important;
-        }
+    .a.link-footer:after{
+        border:1px solid white;
+    }
+        /*.footer-secondary-link >ul li:first-child{*/
+        /*    display: block!important;*/
+        /*}*/
+
 
         .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
             border-color: #c54041;
@@ -2862,40 +2866,42 @@ svg{
             margin-bottom: 12px;
             margin-top: 65px;
         }
-
+        #footerContent .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
         a.link-footer {
-            font-size: 12px;
+            font-size: 16px;
+            padding-left: 20px;
+            padding-top: 20px;
         }
 
         .footer-primary-link {
-            width: 700%;
+            padding: 0px;
+            width: 100%;
         }
-
         .footer-primary-link li {
-            padding: 0;
-            display: inline-block;
+            border-bottom: 1px solid white;
+            padding-left: 0;
+            display: block;
             width: 100%;
             margin-top: 0;
             margin-bottom: 0;
         }
-
-        .footer-secondary-link {
-            width: 700%;
+        .primary-container{
+            padding: 0;
         }
-
-        .padding-0-0-20 {
+        .footer-primary-link ul li:last-child {
+            border-bottom: none;
+        }
+        .footer-primary-link li:last-child:after{
+            display: none;
+        }
+       .padding-0-0-20 {
             margin-left: -5px;
         }
-
         .navbar-toggle {
             right: 10px;
         }
-
-        /*.abc{*/
-        /*    margin:5px auto;*/
-        /*}*/
-        /*.SocialMediaIcon{*/
-        /*    margin:auto;*/
-        /*}*/
     }
 

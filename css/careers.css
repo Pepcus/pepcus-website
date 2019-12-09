@@ -1518,19 +1518,6 @@ svg {
 				top: 50%;
 			}
 
-			.footer-primary-link {
-				width: 100%;
-			}
-
-			.footer-primary-link li {
-				padding: 0;
-				display: inline-block;
-			}
-
-			a.link-footer {
-				display: inline-block;
-				font-size: 12px;
-			}
 
 			svg {
 				padding-top: 0px;
@@ -1586,12 +1573,17 @@ svg {
 				-webkit-filter: grayscale(100%);
 				filter: grayscale(100%);
 			}
-
 			.social-media-glassdoor {
 				background: #1dac4b;
 				color: white;
 				position: relative;
 				top: 2px;
+			}
+			#footerContent ul li{
+				border-bottom:1px solid grey;
+			}
+			#footerContent ul li:last-child{
+				border-bottom: none;
 			}
 		}
 @media(max-width:767px){
@@ -1601,7 +1593,7 @@ svg {
 	.footer-secondary-link >ul{
 		display: none;
 	}
-
 }
+
 
 
