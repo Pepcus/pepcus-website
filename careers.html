@@ -13,11 +13,12 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox-transitions.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.mosaic.min.css">
-    <link rel="stylesheet" href="css/demo.min.css">
+<!--    <link rel="stylesheet" href="css/demo.min.css">-->
     <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" type="text/css" href="css/careers.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/careers.css">-->
 </head>
-<body id = "page">
+<body id="page">
+
 	<div class="loading">
         <div class="loading-image">
             <img src="images/loader/newloader.gif" data-src="images/loader/newloader.gif" class="lazy" alt="loader" />
@@ -50,9 +51,9 @@
     <!----------------------------------------- current opening section starts------------------- -->
         <section>
             <div class="careers-section montserrat-font-family">
-                    <div class="container-fluid padding-0" id="current-opening-wrapper">
-                        <div id="opening-title-wrapper"></div>
-                        <div id="modal-content-wrapper"></div>
+                <div class="container-fluid padding-0" id="current-opening-wrapper">
+                    <div id="opening-title-wrapper"></div>
+                    <div id="modal-content-wrapper"></div>
                         <div id="jobopening"></div>
                     </div>
             </div>
@@ -62,37 +63,37 @@
     <!--------------------------------------------------tech expertise section start------------------------------------------------->
     <section>
         <div class = "services-section montserrat-font-family overflow-hidden xxs-padding-30">
-            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 clients">
+                    <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 clients">
                 <div class = "techexpertise-section-head">
                     <div id="techexpertise-title">
                         <h3 class="font-size-40 line-height-13 font-bold text-center mar-bot-35">Our Tech Expertise</h3>
                     </div>
                     <section class="techexpertise-container text-center">
-                        <div class = "col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 tech-expertise-slider">
+                                <div class = "col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 tech-expertise-slider">
                             <div class="owl-carousel owl-theme" id = "slider-1">
                                 <div class="item">
                                     <div class="techexpertise-section">
                                         <a><img src="images/careers/j2ee1.png" alt="te1" class="img-responsive"></a>
-                                    </div>
+                                </div>
                                     <div class="techexpertise-section">
                                         <a><img src="images/careers/spring-icon-6.png" alt="te2" class="img-responsive"></a>
-                                    </div>
+                        </div>
                                     <div class="techexpertise-section">
                                         <a><img src="images/careers/hibernate.png" alt="te1" class="img-responsive"></a>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
                                 <div class="item">
                                     <div class="techexpertise-section">
                                         <a><img src="images/careers/restapi1.png" alt="te1" class="img-responsive"></a>
-                                    </div>
+            </div>
 
 
                                     <div class="techexpertise-section">
                                         <a><img src="images/careers/microsof.net.png" alt="te1" class="img-responsive"></a>
-                                    </div>
+        </div>
                                     <div class="techexpertise-section">
                                         <a><img src="images/careers/php1.png" alt="te1" class="img-responsive"></a>
-                                    </div>
+        </div>
                                 </div>
                                 <div class="item">
                                     <div class="techexpertise-section">
@@ -322,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+    </section>
                 </div>
             </div>
         </div>
@@ -456,14 +457,14 @@
                 <div class = "gallerypepcus-section-head">
                     <div id="gallerypepcus-title">
                         <h3 class="font-size-40 line-height-13 font-bold text-center mar-bot-35">If work isn't FUN, you are NOT playing on the right team..</h3>
-                    </div>
+            </div>
                     <section class="gallerypepcus-container text-center">
                         <div class = "col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 gallerypepcus-slider">
                             <div class="owl-carousel owl-theme" id = "slider-3">
                                 <div class="item">
                                     <div class="gallerypepcus-section">
                                         <a data-fancybox="gallery" href="images/sliders/s01.jpg"><img src="images/sliders/s01.jpg" alt="gallery-slider1" class="img-responsive"></a>
-                                    </div>
+            </div>
                                     <div class="gallerypepcus-section">
                                         <a data-fancybox="gallery" href="images/sliders/s02.jpg"><img src="images/sliders/s02.jpg" alt="gallery-slider2" class="img-responsive"></a>
                                     </div>
@@ -606,7 +607,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+        </section>
                 </div>
             </div>
         </div>
@@ -616,7 +617,7 @@
 
 <!---------------------------------------------------scrolltop section starts -------------------------------------------------->
 
-    <section>
+        <section>
             <div class="scroll-top-section">
                 <a href="#" class="scrollup"><i class="fa fa-arrow-up arrow-up-icon" aria-hidden="true"></i></a>
             </div>
@@ -730,13 +731,12 @@
               "</div>" +
               "</nav>";
             $(htmlRender).appendTo("#nav-header");
-
           });
         };
         var renderBackgroundHeader = function(bgHeader) {
                 $.each(bgHeader, function(key, value) {
                   var htmlRender = "<div class=\"general-banner montserrat-font-family\">" +
-                    "<div class=\"banner parallax general-team white-color flex-center text-center\">" +
+                    "<div class=\"banner parallax general-careers white-color flex-center text-center\">" +
                     "<div class=\"container\">" +
                     "<div class=\"content\">" +
                     "<h1 class=\"main-heading-inner font-size-50 font-bold\">"+value.headerTitle+"</h1>" +
