@@ -686,7 +686,7 @@ svg {
 }
 .clients .techexpertise-container .techexpertise-section a img {
 	max-width: 110px;
-	margin: 0 15px;
+	margin: 0 auto;
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 	-webkit-transition: all 1s;
@@ -702,26 +702,26 @@ svg {
 
 }
 .workspace-section a:hover > img {
-	transform: scale(1.2);
-	-webkit-transition: all 1s;
-	transition: all 1s;
+	/*transform: scale(1.2);*/
+	/*-webkit-transition: all 1s;*/
+	/*transition: all 1s;*/
 }
 #slider-2 .workspace-section img {
-	max-height: 220px;
-	max-width: 300px;
-	margin-bottom: 40px;
+	max-height: 620px;
+	max-width: 700px;
+	margin-bottom: 10px;
 	margin-top: 20px;
 }
 .gallerypepcus-section a:hover > img {
-	transform: scale(1.2);
-	-webkit-transition: all 1s;
-	transition: all 1s;
+	/*transform: scale(1.2);*/
+	/*-webkit-transition: all 1s;*/
+	/*transition: all 1s;*/
 }
 #slider-3 .gallerypepcus-section img {
-	max-height: 220px;
-	max-width: 250px;
+	max-height: 720px;
+	max-width: 750px;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 .techexpertise a:hover > img {
 	transform: scale(1.2);
@@ -734,12 +734,12 @@ svg {
 .clients .client-container .client-section a:hover>img {
 	 transform: scale(1.2);
  }
-.clients .workspace-container .workspace-section a:hover>img {
-	transform: scale(1.2);
-}
-.clients .gallerypepcus-container .gallerypepcus-section a:hover>img {
-	transform: scale(1.2);
-}
+/*.clients .workspace-container .workspace-section a:hover>img {*/
+/*	transform: scale(1.2);*/
+/*}*/
+/*.clients .gallerypepcus-container .gallerypepcus-section a:hover>img {*/
+/*	transform: scale(1.2);*/
+/*}*/
 .clients .techexpertise-container .techexpertise-section a:hover>img {
 	transform: scale(1.2);
 }
@@ -748,20 +748,20 @@ svg {
 }
 @media(max-width:767px){
 	#slider-2 .workspace-section img {
-		max-height: 220px;
-		max-width: 140px;
+		max-height: 420px;
+		max-width: 440px;
 		margin-bottom: 40px;
 	}
 	#slider-3 .gallerypepcus-section img {
 		max-height: 220px;
-		max-width: 150px;
+		max-width: 250px;
 		margin-bottom: 20px;
 	}
 }
 @media(min-width:768px) and (max-width: 1024px){
 	#slider-2 .workspace-section img {
-		max-height: 220px;
-		max-width: 212px;
+		max-height: 520px;
+		max-width: 512px;
 		margin-bottom: 40px;
 	}
 	#slider-3 .gallerypepcus-section img {
