@@ -1120,9 +1120,6 @@ svg {
     }
 }
 @media (min-width:768px) and (max-width:992px) {
-	.nicescroll-rails-hr ,.nicescroll-cursors{
-		display: none;
-	}
 	.react-engineer-card {
 		width: 250px;
 	}

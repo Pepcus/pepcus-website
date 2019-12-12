@@ -48,14 +48,18 @@
             </div>
         </section>
         <!-- join us section ends -->
-
+    <section>
+        <div class="careers-section montserrat-font-family">
+            <div class="container-fluid padding-0" id="current-opening-wrapper">
+                <div id="opening-title-wrapper"></div>
+                <div id="modal-content-wrapper"></div>
+                <div id="jobopening"></div>
+            </div>
+        </div>
+    </section>
         <!-- current opening section starts -->
         <section>
             <div class = "services-section montserrat-font-family overflow-hidden sky-light padding-75-0-0 xxs-padding-30">
-                <div class="container-fluid padding-0" id="current-opening-wrapper">
-                    <div id="opening-title-wrapper"></div>
-                    <div id="modal-content-wrapper"></div>
-                    <div class="mosaic jQueryMosaic" id="mosaic"></div>
                     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 clients">
                         <div class = "services-section-head">
                             <div id="services-title"></div>
@@ -183,7 +187,6 @@
             <script type='application/javascript' src="js/jquery-1.9.1.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             <script src="js/owl.carousel.js"></script>
-            <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
             <script type = "text/javascript" src = "js/jquery.fancybox.min.js"></script>
             <script type="text/javascript" src="js/lazyload.min.js"></script>
             <script type='application/javascript' src="js/jquery.mosaic.js"></script>
@@ -354,7 +357,6 @@
             // Get the modal
             // When the user clicks the button, open the modal
             function openModal(clicked_id) {
-
               var modalnew = document.getElementById(clicked_id);
               modalnew.style.display = "block";
             }
@@ -368,27 +370,51 @@
                 event.target.style.display = "none";
               }
             };
-
             });
         };
-        var renderOpeningSection = function(openingBlock) {
-          $.each(openingBlock, function(key, value) {
-            var htmlRender = "<div class=\" "+ value.jobDivBackgroundClass +" padding-0 card-hover card-parallax card-mobile-height" +value.jobDivWidthClass+  " \">" +
-              "<a onclick=\"openModal(\'"+value.onclickOpenModal+"\')\" target=\"_self\" >" +
-              "<div class=\"card\">" +
-              "<div class = \"card-heading\">" +
-              "<h2 class = \"font-size-32 card-head-hover\">"+value.jobTitle+"</h2>" +
-              "<p class = \"line-height-16 font-size-14 mar-top-15\">"+value.jobExperience +"</p>" +
-              "<h3 class = \"font-size-14 mar-top-15\">"+ value.jobLocation+"</h3>" +
-              "<div class = \"card-btn btn btn-more\">" +
-              "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
-              "</div>" +
-              "</div>" +
-              "</div>" +
-              "</a>" +
-              "</div>";
-            $(htmlRender).appendTo("#mosaic");
-            $('#mosaic').Mosaic();
+            var renderOpeningSection = function(openingBlock) {
+              $.each(openingBlock, function(key, value) {
+                if(key!==6){
+                  var htmlRender =
+                    "<div class='col-sm-6 col-xs-12 col-md-4 col-lg-4 padding-0'>"+
+                    "<div class='job-opening-image card-hover' style='background-image:url("+ value.cardImages +")'>"+
+                    "<a onclick=\"openModal(\'"+value.onclickOpenModal+"\')\" target=\"_self\" >" +
+                    "<div class=\"card\">" +
+                    "<div class = \"card-heading\">" +
+                    "<h2 class = \"font-size-32 card-head-hover font-bold\">"+value.jobTitle+"</h2>" +
+                    "<p class = \"font-size-16 mar-top-15 card-head-hover\">"+value.jobExperience+"</p>" +
+                    "<h3 class = \"font-size-15 mar-top-15\">"+ value.jobLocation+"</h3>" +
+                    "<div class = \"card-btn btn btn-more\">" +
+                    "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</a>" +
+                    "</div>"+
+                    "</div>";
+                }
+                else
+                {
+                  var htmlRender =
+                    "<div class='col-sm-12 col-xs-12 padding-0'>"+
+                    "<div class='job-opening-image card-hover' style='background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("+ value.cardImages +")'>"+
+                    "<a onclick=\"openModal(\'"+value.onclickOpenModal+"\')\" target=\"_self\" >" +
+                    "<div class=\"card\">" +
+                    "<div class = \"card-heading\">" +
+                    "<h2 class = \"font-size-32 card-head-hover font-bold\">"+value.jobTitle+"</h2>" +
+                    "<p class = \"line-height-16 font-size-15 mar-top-15\">"+value.jobShortDescription +"</p>" +
+                    "<h3 class = \"font-size-15 mar-top-15\">"+ value.jobLocation+"</h3>" +
+                    "<div class = \"card-btn btn btn-more\">" +
+                    "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</a>" +
+                    "</div>"+
+                    "</div>";
+                }
+
+                $(htmlRender).appendTo("#jobopening");
             // Get the modal
             // When the user clicks the button, open the modal
             function openModal(clicked_id) {
@@ -567,9 +593,6 @@
               title : {
                 type : 'inside'
               },
-
-              //buttons   : {}
-
             }
           });
           var content = "";
@@ -618,7 +641,6 @@
             "<div class='mar-bot-35 benefit-container'>"+
             childImageContainer +
             "</div>";
-
           $("#benefitPart2").html(parentImageContainer);
         };
 
@@ -827,9 +849,6 @@
             $("#error-wrapper-block").append(htmlRender);
         };
         var fetchConfigAndRender = function () {
-          /*$.getJSON('careers.json', function (data) {
-            renderJOpage(data);
-          });*/
           $.ajax({
             url: 'careers.json',
             dataType: 'json',
@@ -846,15 +865,6 @@
 
         // start
         fetchConfigAndRender();
-
-              $("body").niceScroll({
-                cursorcolor:"#c54041",
-                cursorborder:"0",
-                cursorwidth:"8px"
-              });
             </script>
-<scriptt>
-
-</scriptt>
 </body>
 </html>
