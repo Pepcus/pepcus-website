@@ -2904,4 +2904,14 @@ svg{
             right: 10px;
         }
     }
+.job-opening-image{
+    min-height: 300px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.job-opening-image:last-child{
+    height: 400px;
+    width: 100%;
+    background-position: 70%;
+}
 

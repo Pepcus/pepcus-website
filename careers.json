@@ -284,6 +284,7 @@
   ],
   "currentOpeningSection": [
     {
+      "cardImages" : "images/careers/JAVA-Lead.jpg",
       "onclickOpenModal" : "java-lead",
       "jobDivWidthClass": " stripe2",
       "jobTitle": "JAVA LEAD",
@@ -293,6 +294,7 @@
       "jobDivBackgroundClass" : "java-lead-card"
     },
     {
+      "cardImages" : "images/careers/JAVA-Engineer.jpg",
       "onclickOpenModal" : "java-engineer",
       "jobDivWidthClass": " stripe1",
       "jobTitle": "JAVA Engineer",
@@ -302,6 +304,7 @@
       "jobDivBackgroundClass" : "java-engineer-card"
     },
     {
+      "cardImages" : "images/careers/React-Engineer.jpg",
       "onclickOpenModal" : "react-engineer",
       "jobDivWidthClass": " stripe3",
       "jobTitle": "React Engineer",
@@ -311,6 +314,7 @@
       "jobDivBackgroundClass" : "react-engineer-card"
     },
     {
+      "cardImages" : "images/careers/Devops-Engineer.jpg",
       "onclickOpenModal" : "devops-engineer",
       "jobDivWidthClass": " stripe2",
       "jobTitle": "Devops Engineer",
@@ -320,6 +324,7 @@
       "jobDivBackgroundClass" : "devops-engineer-card"
     },
     {
+      "cardImages" : "images/careers/QA-Lead.jpg",
       "onclickOpenModal" : "qa-lead",
       "jobDivWidthClass": " stripe1",
       "jobTitle": "QA Lead",
@@ -329,6 +334,7 @@
       "jobDivBackgroundClass" : "qa-lead-card"
     },
     {
+      "cardImages" : "images/careers/QA-Engineer.jpg",
       "onclickOpenModal" : "qa-engineer",
       "jobDivWidthClass": " stripe3",
       "jobTitle": "QA Engineer",
@@ -338,6 +344,7 @@
       "jobDivBackgroundClass" : "qa-engineer-card"
     },
     {
+      "cardImages" : "images/careers/PHP-Engineer.jpg",
       "onclickOpenModal" : "php-engineer",
       "jobDivWidthClass": " stripe2",
       "jobTitle": "PHP Engineer",
