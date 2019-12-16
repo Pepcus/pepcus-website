@@ -626,9 +626,6 @@ svg {
 	-webkit-transition: all 1s;
 	transition: all 1s;
 }
-.gallerypepcus-section {
-	padding: 10px 0;
-}
 .gallerypepcus-section a img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
@@ -676,7 +673,7 @@ svg {
 	-webkit-transition: all 1s;
 	transition: all 1s;
 }
-.clients .gallerypepcus-container .gallerypepcus-section a img {
+.gallery-section .gallerypepcus-container .gallerypepcus-section a img {
 	max-width: 190px;
 	margin: 0 auto;
 	-webkit-filter: grayscale(0);
@@ -701,26 +698,16 @@ svg {
 	max-height: 120px;
 
 }
-.workspace-section a:hover > img {
-	/*transform: scale(1.2);*/
-	/*-webkit-transition: all 1s;*/
-	/*transition: all 1s;*/
-}
 #slider-2 .workspace-section img {
 	max-height: 620px;
 	max-width: 700px;
 	margin-bottom: 10px;
 	margin-top: 20px;
 }
-.gallerypepcus-section a:hover > img {
-	/*transform: scale(1.2);*/
-	/*-webkit-transition: all 1s;*/
-	/*transition: all 1s;*/
-}
 #slider-3 .gallerypepcus-section img {
 	max-height: 720px;
 	max-width: 750px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	margin-top: 0px;
 }
 .techexpertise a:hover > img {
@@ -734,16 +721,13 @@ svg {
 .clients .client-container .client-section a:hover>img {
 	 transform: scale(1.2);
  }
-/*.clients .workspace-container .workspace-section a:hover>img {*/
-/*	transform: scale(1.2);*/
-/*}*/
-/*.clients .gallerypepcus-container .gallerypepcus-section a:hover>img {*/
-/*	transform: scale(1.2);*/
-/*}*/
 .clients .techexpertise-container .techexpertise-section a:hover>img {
 	transform: scale(1.2);
 }
 .clients {
+	padding: 70px 0;
+}
+.gallery-section {
 	padding: 70px 0;
 }
 @media(max-width:767px){
@@ -755,7 +739,10 @@ svg {
 	#slider-3 .gallerypepcus-section img {
 		max-height: 220px;
 		max-width: 250px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+	}
+	.gallery-section {
+		padding: 20px 0;
 	}
 }
 @media(min-width:768px) and (max-width: 1024px){
@@ -766,8 +753,8 @@ svg {
 	}
 	#slider-3 .gallerypepcus-section img {
 		max-height: 220px;
-		max-width: 150px;
-		margin-bottom: 20px;
+		max-width: 250px;
+		margin-bottom: 10px;
 	}
 }
 .card-parallax {
