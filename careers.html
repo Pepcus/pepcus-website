@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <div class="clear-both">
+    <div class="col-lg-offset-1 col-lg-10 col-md-10 col-sm-12 col-xs-12 mar-bot-50 gallery-section-slider clear-both">
         <section>
             <div class="benefit-container">
                 <div class="benefit-image-container">
@@ -402,7 +402,7 @@
                     "<div class=\"card\">" +
                     "<div class = \"card-heading\">" +
                     "<h2 class = \"font-size-32 card-head-hover font-bold\">"+value.jobTitle+"</h2>" +
-                    "<p class = \"line-height-16 font-size-15 mar-top-15\">"+value.jobShortDescription +"</p>" +
+                    "<p class = \"line-height-16 font-size-15 mar-top-15\">"+value.jobExperience +"</p>" +
                     "<h3 class = \"font-size-15 mar-top-15\">"+ value.jobLocation+"</h3>" +
                     "<div class = \"card-btn btn btn-more\">" +
                     "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
@@ -413,7 +413,6 @@
                     "</div>"+
                     "</div>";
                 }
-
                 $(htmlRender).appendTo("#jobopening");
             // Get the modal
             // When the user clicks the button, open the modal
@@ -495,7 +494,6 @@
           });
           var content = "";
           for (var i in techSlider["techExpertise"]) {
-
             var img = techSlider["techExpertise"][i].img;
             var alt = techSlider["techExpertise"][i].alt;
             var iconSlider = techSlider["techExpertise"][i].iconSliderClass;
@@ -597,7 +595,6 @@
           });
           var content = "";
           for(var i in workspaceSlider["workspaceSectionSliderWrapper"]) {
-
             var img = workspaceSlider["workspaceSectionSliderWrapper"][i].img;
             var alt = workspaceSlider["workspaceSectionSliderWrapper"][i].alt;
             content += "<div class='item'>" +
@@ -612,7 +609,7 @@
           $.each(benefitTitle, function(key, value) {
             var htmlRender = "<h3 class = \"font-size-40 primary-color mar-bot-15 line-height-13 font-bold text-center\">"
               + value.benefitSectionHeader +
-              "</h3>"
+              "</h3>";
             $(htmlRender).appendTo("#benefit-section-title");
           });
         };
@@ -718,7 +715,6 @@
             helpers: {
               title : {
                 type : 'outside'
-
               },
               overlay : {
                 speedIn : 200,
@@ -731,14 +727,10 @@
               title : {
                 type : 'inside'
               },
-
-              //buttons   : {}
-
             }
           });
           var content = "";
           for(var i in gallerySlider["gallerySliderWrapper"]) {
-
             var img = gallerySlider["gallerySliderWrapper"][i].img;
             var alt = gallerySlider["gallerySliderWrapper"][i].alt;
             content += "<div class='item'>" +
@@ -759,9 +751,7 @@
           $.each(footerHyperlink, function(key, value) {
              htmlRender = "<li><a href=\"index.html\" class=\"link-footer secondary-color\">"+value.footerPrimaryTitle+"</a></li>";
             $(htmlRender).appendTo("#footer-primary ul");
-
           });
-
         };
         var footerSecondaryTitle = function(footerSecondary) {
           $.each(footerSecondary, function(key, value) {
