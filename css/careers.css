@@ -730,6 +730,7 @@ svg {
 .gallery-section {
 	padding: 70px 0;
 }
+
 @media(max-width:767px){
 	#slider-2 .workspace-section img {
 		max-height: 420px;
