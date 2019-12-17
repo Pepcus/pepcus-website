@@ -1455,6 +1455,9 @@ h1.loader-pepcus:before {
 .contact-quick >a:hover .onHover {
     display: none;
 }
+.mar-bot-75{
+    margin-bottom: 75px;
+}
 .servicess-section-container a:hover .services-section-new-content:after {
     transform: scaleX(1);
 }
@@ -1486,6 +1489,7 @@ h1.loader-pepcus:before {
     background: #c54041;
     color: #fff;
 }
+
 .services-section-img img{
     width: 100%;
 }
@@ -1609,6 +1613,73 @@ nav.anim-arrows>span.anim-arrows-prev, nav.anim-arrows>span.anim-arrows-next {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
+
+.committed-software-services-section .image-wrapper{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #c54041;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 40px);
+}
+.committed-services-content{
+    display:flex;
+}
+.csw-content-wrapper{
+    margin-top: 20px;
+}
+.committed-software-services-section{
+    text-align: center;
+    border: solid 2px grey;
+    display: flex;
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    flex-wrap: wrap;
+    position: relative;
+}
+.committed-software-services-section:hover > .image-wrapper {
+    background: #c54041;
+    color: #fff;
+}
+.committed-software-services-section:hover {
+    box-shadow: 0 0 10px grey;
+}
+@media(min-width:768px) and (max-width:1024px){
+    .committed-services-content{
+        display:block;
+    }
+    .committed-software-services-section{
+        width: 48%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        height: 200px;
+    }
+    .csw-content-wrapper {
+        margin-top: 40px;
+    }
+}
+@media(max-width:767px){
+    .committed-services-content{
+        display:block;
+    }
+    .committed-software-services-section{
+        width: 53%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .mar-bot-75{
+        margin-bottom: 40px;
+    }
+}
+
 .SocialMediaIcon {
     padding: 6px;
     font-size: 18px;
