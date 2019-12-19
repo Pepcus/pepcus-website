@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang = "en-us">
-
 <head>
     <meta charset="utf-8">
     <meta name = "description" http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Demo css -->
-<!--    <link rel="stylesheet" href="css/demo.min.css">-->
     <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/team.css">
-    <link rel="stylesheet" href="css/carouseller.css">
 
 </head>
 
@@ -45,12 +41,11 @@
                         <li class="active"><a href="team.html">team</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-
                 </div>
             </div>
         </nav>
-        <!-- nav ends -->
     </section>
+    <!-- nav ends -->
 
     <section>
         <div class="general-banner montserrat-font-family">
@@ -71,7 +66,6 @@
                 <div id="main_team"></div>
                 <div id="primary_team" class="col-lg-offset-2 col-md-offset-2"></div>
                 <div id="secondary_team" class="col-lg-offset-2 col-md-offset-2"></div>
-<!--                <div id="secondary_team"></div>-->
             </div>
             <div id="third_team"></div>
 
@@ -94,9 +88,7 @@
                     </div>
                 </div>
                 </a>
-                </a>
             </div>
-        </div>
         </div>
     </section>
     <!-- team-grid ends -->
@@ -195,13 +187,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type='application/javascript' src="js/ls.bgset.min.js"></script>
     <script type='application/javascript' src="js/lazysizes.min.js"></script>
-    <script type='application/javascript' src="js/fastclick.min.js"></script>
     <script type='application/javascript' src="js/carouseller.js"></script>
     <script type='application/javascript' src="js/lazy-image.min.js"></script>
-    <script type='application/javascript' src="js/custom.min.js"></script>
     <script type="text/javascript">
-        // new WOW().init();
-        // <script type="text/javascript">
         var mainteam = [{
                 name: 'Ajay Jain',
                 imageURL: '',
@@ -228,11 +216,7 @@
                 description: ' A profound professional with  amazing management skills, a certified scrum master, Ankit is highly experienced in leading large size development teams. He has proved capabilities of producing outstanding results which led Pepcus business scaled exponentially. His personal interest in core technologies and innovation are a great asset to the company.',
                 specialities: ' Program Management | Technical Leadership'
             }
-
         ];
-
-        // new WOW().init();
-
         var renderMainTeam = function() {
             for (var i = 0; i < mainteam.length; i++) {
                 var teamData = mainteam[i];
@@ -257,7 +241,6 @@
                 $("#main_team").append(teamHTML);
             }
         };
-
         var primaryteam = [{
                 name: 'Kapilesh Israni',
                 imageURL: '',
@@ -368,7 +351,6 @@
             }
         };
         var thirdTeam = [{
-
           name: 'Sharad Namdeo',
           imageURL: '',
           role: 'Sr. Software Engineer',
@@ -376,7 +358,6 @@
           img2: 'images/team/sharadn-2.jpg'
 
         }, {
-
             name: 'Amit Jain',
             imageURL: '',
             role: 'Sr. Software Engineer',
@@ -384,13 +365,11 @@
             img2: 'images/team/amitj-2.jpg'
 
           },{
-
                 name: 'Sandeep Vishwakarma',
                 imageURL: '',
                 role: 'Sr. Software Engineer',
                 img1: 'images/team/sandeepv-1.jpg',
                 img2: 'images/team/sandeepv-2.jpg'
-
             }, {
 
             name: 'Shivaji Patel',
@@ -400,7 +379,6 @@
             img2: 'images/team/shivajip-2.jpg'
 
           },{
-
                 name: 'Sonam Agarwal',
                 imageURL: '',
                 role: 'Sr. Quality Engineer',
@@ -429,7 +407,6 @@
               img2: 'images/team/ashutoshy-2.jpg'
 
             },{
-
                 name: 'Shiva Jain',
                 imageURL: '',
                 role: 'Sr. Software Engineer',
@@ -548,12 +525,11 @@
                 role: 'Associate Software Engineer',
                 img1: 'images/team/palaka-1.jpg',
                 img2: 'images/team/palaka-2.jpg'
-            }
+        }
         ];
         var renderThirdTeam = function() {
             for (var k = 0; k < thirdTeam.length; k++) {
                 var teamData = thirdTeam[k];
-
                 var teamHTML = $('<div class = " col-lg-3 col-md-3 col-sm-4 col-xs-12">' +
                     '<div class = "team-container team-container-top">' +
                     '<div class="image-container image-container-small">' +
@@ -588,24 +564,20 @@
                     var timesClicked = 0;
                     if (data) {
                         $("div.image-container").on('click', 'div', function(e) {
-                            // alert($(this).attr("class"));
                             if ($(this).hasClass("background-image")) {
                                 if ($(this).css('opacity') == 0)
                                     $(this).css('opacity', '1');
                                 if ($(this).css('opacity') == 1)
                                     $(this).css('opacity', '0');
-                                // $(this).toggle('hover-toggle');
                             }
                         });
                     $.fn.clickOff = function(callback, selfDestroy) {
                     var clicked = false;
                     var parent = this;
                     var destroy = selfDestroy || true;
-                    
                     parent.click(function() {
                         clicked = true;
                     });
-                    
                     $(document).click(function(event) { 
                         if (!clicked) {
                             callback(parent, event);
@@ -619,23 +591,14 @@
 
                         $(".hover").css('opacity', '0');
                     });
-
                  }
                      else {
-
                     }
-
                     $('.image-container').click(function() {
                     });
-
                 });
-
             });
-
         });
-        window.addEventListener('load', function() {
-            new FastClick(document.body);
-        }, false);
     </script>
     <script>
       $(function () {
