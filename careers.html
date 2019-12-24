@@ -53,7 +53,7 @@
                     <div id="opening-title-wrapper"></div>
                     <div id="modal-content-wrapper"></div>
                         <div id="jobopening"></div>
-                    </div>
+                </div>
             </div>
         </section>
 <!-------------------------------------------------- current opening section ends------------------------------------------>
@@ -803,50 +803,59 @@
               }
             };
             });
-        };
-        var renderOpeningSection = function(openingBlock) {
-          $.each(openingBlock, function(key, value) {
-                if(key!==6){
-                  var htmlRender =
-                    "<div class='col-sm-6 col-xs-12 col-md-4 col-lg-4 padding-0'>"+
-                    "<div class='job-opening-image card-hover' style='background-image:url("+ value.cardImages +")'>"+
-              "<a onclick=\"openModal(\'"+value.onclickOpenModal+"\')\" target=\"_self\" >" +
-              "<div class=\"card\">" +
-              "<div class = \"card-heading\">" +
-                    "<h2 class = \"font-size-32 card-head-hover font-bold\">"+value.jobTitle+"</h2>" +
-                    "<p class = \"font-size-16 mar-top-15 card-head-hover\">"+value.jobExperience+"</p>" +
-                    "<h3 class = \"font-size-15 mar-top-15\">"+ value.jobLocation+"</h3>" +
-              "<div class = \"card-btn btn btn-more\">" +
-              "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
-              "</div>" +
-              "</div>" +
-              "</div>" +
-              "</a>" +
-                    "</div>"+
-              "</div>";
+            };
+              function toChunkArray(array, chunkSize){
+                var arrayLength = array.length;
+                var chunkArray = [];
+                for (var index = 0; index < arrayLength; index += chunkSize) {
+                  chunkArray.push(array.slice(index, index+chunkSize));
                 }
-                else
-                {
-                  var htmlRender =
-                    "<div class='col-sm-12 col-xs-12 padding-0'>"+
-                    "<div class='job-opening-image card-hover' style='background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("+ value.cardImages +")'>"+
-                    "<a onclick=\"openModal(\'"+value.onclickOpenModal+"\')\" target=\"_self\" >" +
-                    "<div class=\"card\">" +
-                    "<div class = \"card-heading\">" +
-                    "<h2 class = \"font-size-32 card-head-hover font-bold\">"+value.jobTitle+"</h2>" +
-                    "<p class = \"line-height-16 font-size-15 mar-top-15\">"+value.jobExperience +"</p>" +
-                    "<h3 class = \"font-size-15 mar-top-15\">"+ value.jobLocation+"</h3>" +
-                    "<div class = \"card-btn btn btn-more\">" +
-                    "<span class=\"font-size-14\">"+value.jobBtn+"</span>" +
-                    "</div>" +
-                    "</div>" +
-                    "</div>" +
-                    "</a>" +
-                    "</div>"+
-                    "</div>";
+                return chunkArray;
+              }
+              var renderOpeningSection = function(openingBlock) {
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                  var jobOpeningRows = toChunkArray(openingBlock, 1);
+                } else if (window.matchMedia("(max-width: 992px)").matches) {
+                  var jobOpeningRows = toChunkArray(openingBlock, 2);
+                }else {
+                  var jobOpeningRows = toChunkArray(openingBlock, 3);
                 }
-                $(htmlRender).appendTo("#jobopening");
-            // Get the modal
+                jobOpeningRows.forEach(
+                  function (openingRow, index) {
+                    console.log("job opening rows",jobOpeningRows);
+                    console.log("opening row is",openingRow);
+                    var rowLength = openingRow.length;
+                    console.log("opening row length is",openingRow.length);
+                    console.log("rowlength",rowLength);
+                    var columnSize = 12 / rowLength;
+                    console.log("column size is",columnSize);
+                    openingRow.forEach(
+                      function(opening) {
+                        var htmlRender =
+                          "<div class='col-sm-"+columnSize+" col-xs-12 col-md-"+columnSize+" col-lg-"+columnSize+" padding-0'>" +
+                          "<div class='job-opening-image card-hover' style='background-image:url(" + opening.cardImages + ")'>" +
+                          "<a onclick=\"openModal(\'" + opening.onclickOpenModal + "\')\" target=\"_self\" >" +
+                          "<div class=\"card\">" +
+                          "<div class = \"card-heading\">" +
+                          "<h2 class = \"font-size-32 card-head-hover font-bold\">" + opening.jobTitle + "</h2>" +
+                          "<p class = \"font-size-16 mar-top-15 card-head-hover\">" + opening.jobExperience + "</p>" +
+                          "<h3 class = \"font-size-15 mar-top-15\">" + opening.jobLocation + "</h3>" +
+                          "<div class = \"card-btn btn btn-more\">" +
+                          "<span class=\"font-size-14\">" + opening.jobBtn + "</span>" +
+                          "</div>" +
+                          "</div>" +
+                          "</div>" +
+                          "</a>" +
+                          "</div>" +
+                          "</div>";
+                        $(htmlRender).appendTo("#jobopening");
+                      }
+                    );
+                  }
+                );
+              };
+
+              // Get the modal
             // When the user clicks the button, open the modal
             function openModal(clicked_id) {
               var modalnew = document.getElementById(clicked_id);
@@ -865,8 +874,7 @@
                 document.body.style.overflow = "auto";
               }
             };
-          });
-        };
+
         var renderTechExpertiseTitle = function(techExpert) {
           $.each(techExpert, function(key, value) {
             var htmlRender1 = "<h3 class = \"font-size-40 primary-color mar-bot-35 text-center font-bold\">"
