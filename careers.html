@@ -28,7 +28,7 @@
          <section>
            <div id="walkin-content"></div>
          </section>
-        <section id="nav-header"></section>
+        <section id="headerContent"></section>
         </div>
         <!-- nav ends -->
 
@@ -351,7 +351,7 @@
                                 </div>
                                 <div class="item">
                                     <div class="workspace-section">
-                                        <a data-fancybox="workspace" href="images/workspace/work-9.png"><img src="images/workspace/work-9.png" alt="workplace9" class="img-responsive"></a>
+                                        <a data-fancybox="workspace" href="images/workspace/work-9.jpg"><img src="images/workspace/work-9.jpg" alt="workplace9" class="img-responsive"></a>
                                     </div>
                                 </div>
                             </div>
@@ -591,31 +591,9 @@
   </section>
 <!---------------------------------------------------scrolltop section ends -------------------------------------------------->
 <!---------------------------------------------------footer section starts -------------------------------------------------->
-  <div id="footerContent">
-        <footer class="montserrat-font-family clear-both">
-            <div class="footer-link padding-50-0">
-                <div class="container">
-                    <div class="primary-container col-md-8 col-sm-12 col-xxs-12 sm-overflow-hidden" id="footer-block">
-                        <div class="footer-primary-link col-sm-4" id="footer-primary">
-                            <ul>
-
-                            </ul>
-                        </div>
-                        <div class="footer-secondary-link col-sm-8" id="footer-secondary"></div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xxs-12">
-                        <div class="footer-desc padding-50-25 secondary-color">
-                            <div class="footer-desc-head" id="footer-logo-block"></div>
-                            <div class="footer-desc-para font-size-20 mar-bot-15 line-height-13" id="footer-para-block"></div>
-                            <div class="padding-0-0-20" id="footer-social-icon"></div>
-                            <div class="footer-desc-link" id="footer-desc-link"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="footer-section"></div>
-        </footer>
-    </div>
+    <section>
+        <div id="footerContent"></div>
+    </section>
 <!---------------------------------------------------footer section ends -------------------------------------------------->
 
             <script type='application/javascript' src="js/jquery-1.9.1.min.js"></script>
@@ -777,7 +755,7 @@
               " <ul class = \"padding-left-50\">" +htmlRenderSkillList+
               " </ul>" +
               "<div class=\"container2\">\n" +
-              "<a href = \"mailto:careers@pepcus.com?\" class = \"btn btn-apply white-color text-uppercase font-weight-600\" target = \"_self\">Apply now</a>"+"</div>"+
+              "<a href = \"https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUNjJZMVhDRTg4WEdTWEZIUlQ0MExDR0tPTy4u\" class = \"btn btn-apply white-color text-uppercase font-weight-600\" target = \"_self\">Apply now</a>"+"</div>"+
               "</div>"+
               "</div>" +
               "</div>" +
@@ -822,13 +800,8 @@
                 }
                 jobOpeningRows.forEach(
                   function (openingRow, index) {
-                    console.log("job opening rows",jobOpeningRows);
-                    console.log("opening row is",openingRow);
                     var rowLength = openingRow.length;
-                    console.log("opening row length is",openingRow.length);
-                    console.log("rowlength",rowLength);
                     var columnSize = 12 / rowLength;
-                    console.log("column size is",columnSize);
                     openingRow.forEach(
                       function(opening) {
                         var htmlRender =
@@ -1144,6 +1117,15 @@
                     items:3
                   }
                 }
+              });
+              $(function () {
+                $("#headerContent").load("header.html", function() {
+                  $('.liCareers').addClass('active');
+                });
+              });
+              $(function () {
+                $("#footerContent").load("Footer.html")
+
               });
             </script>
 </body>
