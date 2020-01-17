@@ -865,7 +865,7 @@ footer{
 }
 .link-footer-services {
     margin-bottom: 20px;
-    border-bottom: 1px solid #808080;
+    /*border-bottom: 1px solid #808080;*/
 }
 .footer-height {
     height: 400px;
@@ -1078,6 +1078,13 @@ footer{
     padding-bottom: 6px;
     border-bottom-left-radius: 19px;
     border-bottom-right-radius: 19px;
+}
+#bottom_banner .footer-content{
+    border-bottom: 2px solid white;
+    padding: 1px;
+}
+#bottom_banner .footer-content a:hover{
+    color:white;
 }
 .service-section-content {
     padding-top: 70px;

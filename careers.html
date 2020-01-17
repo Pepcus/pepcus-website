@@ -582,6 +582,11 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="explore-more-btn clear-both text-center mar-bot-35 mar-top-30 text-uppercase" id="explore-btn">
+            <a target="_blank" href=" https://www.youtube.com/watch?v=CX8l4w6MXXU&amp;list=PLyTyrJ-M-5yqG4WICuL_p9XjvE5YHqsut" class="btn btn-explore">explore life at Pepcus</a>
+        </div>
+    </section>
 
 <!---------------------------------------------------gallery section ends -------------------------------------------------->
 
@@ -947,12 +952,12 @@
           }
           $("#sliderC").html(content);
         };
-        var exploreGalleryBtn = function(exploreBtn) {
-          $.each(exploreBtn, function(key, value) {
-            var htmlRender = "<a target = \"_blank\" href= \" "+value.exploreBtnHref+"\" class = \"btn btn-explore\">"+value.exploreBtnText+"</a>";
-            $(htmlRender).appendTo("#explore-btn");
-          });
-        };
+        // var exploreGalleryBtn = function(exploreBtn) {
+        //   $.each(exploreBtn, function(key, value) {
+        //     var htmlRender = "<a target = \"_blank\" href= \" "+value.exploreBtnHref+"\" class = \"btn btn-explore\">"+value.exploreBtnText+"</a>";
+        //     $(htmlRender).appendTo("#explore-btn");
+        //   });
+        // };
         var footerSectionHyperlink = function(footerHyperlink) {
           var htmlRender='';
           $.each(footerHyperlink, function(key, value) {
