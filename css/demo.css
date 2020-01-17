@@ -1093,10 +1093,6 @@ footer{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-/*.services-section-main-content{*/
-/*    height: 400px;*/
-/*}*/
-
 .servicer-section-content{
      height: 230px;
  }
@@ -2598,11 +2594,6 @@ img#github-logo{
 .content-section{
     height: 188px;
 }
-/*@media(min-width:992px)and(max-width:1024px){*/
-/*    .content-section{*/
-/*        height: 230px;*/
-/*    }*/
-/*}*/
 @media(min-width:768px) and (max-width:1024px){
     .content-section{
         height:220px;
@@ -3768,9 +3759,6 @@ nav.anim-arrows>span.anim-arrows-prev, nav.anim-arrows>span.anim-arrows-next {
     #primary_team div:nth-child(1) .service-content-block1 {
         height: 500px;
     }
-    /*.parallax {*/
-    /*    background-size: cover;*/
-    /*}*/
     .font-size-32{
         font-size:16px;
     }
@@ -3833,9 +3821,6 @@ nav.anim-arrows>span.anim-arrows-prev, nav.anim-arrows>span.anim-arrows-next {
     #primary_team div:nth-child(1) .service-content-block1 {
         height: auto;
     }
-    /*.parallax {*/
-    /*    background-size: contain;*/
-    /*}*/
     a.link-footer{
         font-size:12px;
     }
@@ -3911,11 +3896,6 @@ nav.anim-arrows>span.anim-arrows-prev, nav.anim-arrows>span.anim-arrows-next {
         display: none;
     }
 
-}
-@media (max-width: 640px) and (orientation: landscape) {
-    /*.parallax {*/
-    /*    background-size: cover;*/
-    /*}*/
 }
 @media only screen and (max-width: 1440px) {
     .about-company-block {
