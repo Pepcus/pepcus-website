@@ -1085,6 +1085,12 @@ footer{
 }
 #bottom_banner .footer-content a:hover{
     color:white;
+    border: transparent;
+}
+#bottom_banner .footer-content a:focus{
+    color:white;
+    border:transparent;
+    text-decoration: none;
 }
 .service-section-content {
     padding-top: 70px;
