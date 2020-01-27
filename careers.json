@@ -284,8 +284,8 @@
   ],
   "currentOpeningSection": [
     {
+      "cardImages" : "images/current-opening-cards/JAVA-Lead.jpg",
       "onclickOpenModal" : "java-lead",
-      "jobDivWidthClass": " stripe2",
       "jobTitle": "JAVA LEAD",
       "jobExperience": "Experience: 5-10 years",
       "jobLocation": "Job Location : Indore",
@@ -293,8 +293,8 @@
       "jobDivBackgroundClass" : "java-lead-card"
     },
     {
+      "cardImages" : "images/current-opening-cards/JAVA-Engineer.jpg",
       "onclickOpenModal" : "java-engineer",
-      "jobDivWidthClass": " stripe1",
       "jobTitle": "JAVA Engineer",
       "jobExperience": "Experience: 2-5 years",
       "jobLocation": "Job Location : Indore",
@@ -302,8 +302,8 @@
       "jobDivBackgroundClass" : "java-engineer-card"
     },
     {
+      "cardImages" : "images/current-opening-cards/React-Engineer.jpg",
       "onclickOpenModal" : "react-engineer",
-      "jobDivWidthClass": " stripe3",
       "jobTitle": "React Engineer",
       "jobExperience": "Experience: 3-7 years",
       "jobLocation": "Job Location : Indore",
@@ -311,8 +311,8 @@
       "jobDivBackgroundClass" : "react-engineer-card"
     },
     {
+      "cardImages" : "images/current-opening-cards/Devops-Engineer.jpg",
       "onclickOpenModal" : "devops-engineer",
-      "jobDivWidthClass": " stripe2",
       "jobTitle": "Devops Engineer",
       "jobExperience": "Experience: 3+ years",
       "jobLocation": "Job Location : Indore",
@@ -320,8 +320,8 @@
       "jobDivBackgroundClass" : "devops-engineer-card"
     },
     {
+      "cardImages" : "images/current-opening-cards/QA-Lead.jpg",
       "onclickOpenModal" : "qa-lead",
-      "jobDivWidthClass": " stripe1",
       "jobTitle": "QA Lead",
       "jobExperience": "Experience: 5-10 years",
       "jobLocation": "Job Location : Indore",
@@ -329,8 +329,8 @@
       "jobDivBackgroundClass" : "qa-lead-card"
     },
     {
+      "cardImages" : "images/current-opening-cards/QA-Engineer.jpg",
       "onclickOpenModal" : "qa-engineer",
-      "jobDivWidthClass": " stripe3",
       "jobTitle": "QA Engineer",
       "jobExperience": "Experience: 2-6 years",
       "jobLocation": "Job Location : Indore",
@@ -338,8 +338,8 @@
       "jobDivBackgroundClass" : "qa-engineer-card"
     },
     {
+      "cardImages" : "images/current-opening-cards/PHP-Engineer.jpg",
       "onclickOpenModal" : "php-engineer",
-      "jobDivWidthClass": " stripe2",
       "jobTitle": "PHP Engineer",
       "jobExperience": "Experience: 3-7 years",
       "jobLocation": "Job Location : Indore",
@@ -465,51 +465,35 @@
   "benefitSectionWrapper": [
     {
       "img":"images/newimages/surbhiNEW.jpg",
-      "alt": "img 1 jpg",
-      "calloutDetails": "Flexible Work Timings",
-      "facilityDescription": "Flexible Work Timings"
+      "alt": "img 1 jpg"
     },
     {
       "img":"images/newimages/anktNEW.jpg",
-      "alt": "img 2 jpg",
-      "calloutDetails": "Open Door Policy",
-      "facilityDescription": "Open Door Policy"
+      "alt": "img 2 jpg"
     },
     {
       "img":"images/newimages/palakNEW.jpg",
-      "alt": "img 3 jpg",
-      "calloutDetails": "Amazing Work Culture",
-      "facilityDescription": "Amazing Work Culture"
+      "alt": "img 3 jpg"
     },
     {
       "img":"images/newimages/shubhmNEW.jpg",
-      "alt": "img 4 jpg",
-      "calloutDetails": "Work from Home Facility",
-      "facilityDescription": "Work from Home Facility"
+      "alt": "img 4 jpg"
     },
     {
       "img":"images/newimages/arpitNEW.jpg",
-      "alt": "img 5 jpg",
-      "calloutDetails": "Awesome Events and Outings",
-      "facilityDescription": "Awesome Events and Outings"
+      "alt": "img 5 jpg"
     },
     {
       "img":"images/newimages/kapilesh.jpg",
-      "alt": "img 6 jpg",
-      "calloutDetails": "5 Days A Week",
-      "facilityDescription": "5 Days A Week"
+      "alt": "img 6 jpg"
     },
     {
       "img":"images/newimages/nikhil.jpg",
-      "alt": "img 7 jpg",
-      "calloutDetails": "Group Health Insurance",
-      "facilityDescription": "Group Health Insurance"
+      "alt": "img 7 jpg"
     },
     {
       "img":"images/newimages/sandeepNEW1.jpg",
-      "alt": "img 8 jpg",
-      "calloutDetails": "Snacks on Monday & Friday",
-      "facilityDescription": "Snacks on Monday & Friday"
+      "alt": "img 8 jpg"
     }
   ],
   "gallerySliderTitle" : [
@@ -519,39 +503,39 @@
   ],
   "gallerySliderWrapper": [
     {
-      "img":"images/sliders/s1.jpg",
+      "img":"images/sliders/s01.jpg",
       "alt": "slider 1 jpg"
     },
     {
-      "img":"images/sliders/s2.jpg",
+      "img":"images/sliders/s02.jpg",
       "alt": "slider 2 jpg"
     },
     {
-      "img":"images/sliders/s3.jpg",
+      "img":"images/sliders/s03.jpg",
       "alt": "slider 3 jpg"
     },
     {
-      "img":"images/sliders/s4.jpg",
+      "img":"images/sliders/s04.jpg",
       "alt": "slider 4 jpg"
     },
     {
-      "img":"images/sliders/s5.jpg",
+      "img":"images/sliders/s05.jpg",
       "alt": "slider 5 jpg"
     },
     {
-      "img":"images/sliders/s6.jpg",
+      "img":"images/sliders/s06.jpg",
       "alt": "slider 6 jpg"
     },
     {
-      "img":"images/sliders/s7.jpg",
+      "img":"images/sliders/s07.jpg",
       "alt": "slider 7 jpg"
     },
     {
-      "img":"images/sliders/s8.jpg",
+      "img":"images/sliders/s08.jpg",
       "alt": "slider 8 jpg"
     },
     {
-      "img":"images/sliders/s9.jpg",
+      "img":"images/sliders/s09.jpg",
       "alt": "slider 9 jpg"
     },
     {
@@ -632,7 +616,7 @@
       "alt": "slider 28 jpg"
     },
     {
-      "img":"images/sliders/s29.jpg",
+      "img":"images/sliders/s29.jpeg",
       "alt": "slider 29 jpg"
     },
     {
@@ -644,7 +628,7 @@
       "alt": "slider 31 jpg"
     },
     {
-      "img":"images/sliders/s32.jpeg",
+      "img":"images/sliders/s32.jpg",
       "alt": "slider 32 jpg"
     },
     {
@@ -662,18 +646,6 @@
     {
       "img":"images/sliders/s36.jpg",
       "alt": "slider 36 jpg"
-    },
-    {
-      "img":"images/sliders/s37.jpg",
-      "alt": "slider 37 jpg"
-    },
-    {
-      "img":"images/sliders/s38.jpg",
-      "alt": "slider 38 jpg"
-    },
-    {
-      "img":"images/sliders/s39.jpg",
-      "alt": "slider 39 jpg"
     }
   ],
   "exploreGalleryButton" : [
@@ -688,6 +660,12 @@
     },
     {
       "footerPrimaryTitle": "About"
+    },
+    {
+      "footerPrimaryTitle": "Services"
+    },
+    {
+      "footerPrimaryTitle": "Careers"
     },
     {
       "footerPrimaryTitle": "Team"
