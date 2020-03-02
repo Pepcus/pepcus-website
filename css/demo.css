@@ -155,7 +155,95 @@ a:hover{
 }
 
 /*---------------------------------Base css ends------------------------------------*/
-
+/*------------------------------profile css start-------------------------------------------*/
+#profile{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px!important;
+}
+#profile h2{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+    color: #c54041;
+    padding: 50px 20px;
+}
+#profile div{
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px 5px #bfbdbd;
+}
+#profile img{
+    width: 100%;
+    height: 100%;
+}
+@media(min-width: 1024px) and (max-width: 1366px){
+    #profile{
+        width: 80%;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px){
+    #profile{
+        width: 80%;
+    }
+}
+@media (max-width: 767px){
+    #profile{
+        width: 80%;
+    }
+    #profile div{
+        margin-bottom: 25px;
+    }
+    #profile h2{
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        color: #c54041;
+        padding: 50px 10px;
+    }
+}
+.page1{
+    background-image: url("../images/profileImages/company-profile-new_page-0001.jpg");
+}
+.page2{
+    background-image: url("../images/profileImages/company-profile-new_page-0002.jpg");
+}
+.page3{
+    background-image: url("../images/profileImages/company-profile-new_page-0003.jpg");
+}
+.page4{
+    background-image: url("../images/profileImages/company-profile-new_page-0004.jpg");
+}
+.page5{
+    background-image: url("../images/profileImages/company-profile-new_page-0005.jpg");
+}
+.page6{
+    background-image: url("../images/profileImages/company-profile-new_page-0006.jpg");
+}
+.page7{
+    background-image: url("../images/profileImages/company-profile-new_page-0007.jpg");
+}
+.page8{
+    background-image: url("../images/profileImages/company-profile-new_page-0008.jpg");
+}
+.page9{
+    background-image: url("../images/profileImages/company-profile-new_page-0009.jpg");
+}
+.page10{
+    background-image: url("../images/profileImages/company-profile-new_page-0010.jpg");
+}
+.page11{
+    background-image: url("../images/profileImages/company-profile-new_page-0011.jpg");
+}
+.page12{
+    background-image: url("../images/profileImages/company-profile-new_page-0012.jpg");
+}
+.page13{
+    background-image: url("../images/profileImages/company-profile-new_page-0013.jpg");
+}
+.page14{
+    background-image: url("../images/profileImages/company-profile-new_page-0014.jpg");
+}
+/*------------------------------profile css ends-------------------------------------------*/
 /*---------------------------------margin css starts----------------------------------*/
 .mar-bot-50 {
     margin-bottom: 50px;
