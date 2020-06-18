@@ -486,6 +486,11 @@
             $.each(value.keySkills, function(key,desc){
               htmlRenderSkillList += "<li>"+desc+"</li>";
             });
+            var formLink = "https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUNjJZMVhDRTg4WEdTWEZIUlQ0MExDR0tPTy4u";
+              if(value.modalContentId === "java-engineer"){
+                  formLink = "https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUQUhHWTNTQURYWElHV0hBOVgzUVZaR0VLWC4u";
+              }
+
             var htmlRender = "<div id=\""+value.modalContentId+"\" class=\"modal\">" +
               " <div class=\"modal-content\">" +
               "  <div class=\"modal-heading\">" +
@@ -520,7 +525,7 @@
               " <ul class = \"padding-left-50\">" +htmlRenderSkillList+
               " </ul>" +
               "<div class=\"container2\">\n" +
-              "<a href = \"https://forms.office.com/Pages/ResponsePage.aspx?id=vr1cVz6rDUuxUtMhGW0KCs_IWa25rr1FlXvOHENkxiVUNjJZMVhDRTg4WEdTWEZIUlQ0MExDR0tPTy4u\" class = \"btn btn-apply white-color text-uppercase font-weight-600\" target = \"_blank\">Apply now</a>"+"</div>"+
+              "<a href = "+formLink+" class = \"btn btn-apply white-color text-uppercase font-weight-600\" target = \"_blank\">Apply now</a>"+"</div>"+
               "</div>"+
               "</div>" +
               "</div>" +
