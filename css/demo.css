@@ -1910,6 +1910,14 @@ h1.loader-pepcus:before {
     padding: 10px;
     cursor: pointer;
 }
+
+.client-section-new-vision-img {
+    transform: scale(1.2);
+    max-width: 140px !important;
+    margin: 0 !important;
+    height: 20px;
+}
+
 .clients .client-container .client-section a:hover > img{
     transform: scale(1.5);
     -webkit-transition: all 1s; /* Safari */
